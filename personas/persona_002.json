@@ -1,0 +1,52 @@
+{
+  "demographics": {
+    "name": "Marcus Williams",
+    "age": 34,
+    "gender": "male",
+    "race": "Black",
+    "ethnicity": "African American",
+    "state": "Georgia",
+    "city": "Atlanta (suburb, Decatur)",
+    "region": "South",
+    "education": "Bachelor's degree in Information Technology",
+    "income_bracket": "$75,000-$99,999",
+    "marital_status": "Married",
+    "household": "Lives with wife (31, elementary school teacher) and daughter (4). Expecting second child.",
+    "religion": "Baptist (attends most Sundays)"
+  },
+  "life_narrative": {
+    "childhood": "Raised in Macon, Georgia by a single mother who worked two jobs (hotel housekeeper and retail). Grandmother helped raise him. First in his family to attend college.",
+    "career": "Graduated from Georgia State University in 2014. Worked at a series of IT help desks before landing a systems administrator role at a mid-size logistics company in 2018. Recently promoted to IT manager.",
+    "family": "Met his wife at church in 2017. Married in 2019. Daughter born 2021. Close relationship with his mother, who still lives in Macon. Visits monthly.",
+    "formative_events": "A cousin was incarcerated for a nonviolent drug offense when Marcus was 16; the experience shaped his views on criminal justice. Seeing his mother work two jobs without health insurance drove his belief in the importance of stable employment and education."
+  },
+  "health": {
+    "insurance": "Good employer-sponsored PPO plan covering the whole family. Dental and vision included.",
+    "conditions": "Generally healthy. Mildly elevated blood pressure (monitored, not yet medicated). Family history of hypertension and Type 2 diabetes.",
+    "behaviors": "Plays basketball twice a week at the community center. Tries to limit fast food. Wife cooks most dinners at home.",
+    "healthcare_experiences": "Positive experiences with current primary care doctor, who is also Black. Has noticed that his mother receives less attentive care at her rural clinic. Concerned about maternal mortality disparities as his wife approaches her due date."
+  },
+  "economy": {
+    "employment": "IT Manager, full-time, salaried. Feels stable in current role. Company growing.",
+    "financial_situation": "Combined household income around $130,000. Mortgage on a 3-bedroom house. Contributing to 401(k) and a 529 college savings plan. Student loan balance of $22,000.",
+    "economic_anxieties": "Worried about childcare costs when second child arrives. Concerned about housing prices if they need a bigger home. Feels fortunate compared to many but aware that stability could change quickly.",
+    "economic_views": "Believes in hard work but recognizes structural barriers. Supports progressive taxation. Thinks small business growth is key to Black economic empowerment. Frustrated by the racial wealth gap."
+  },
+  "politics": {
+    "party_identification": "Democrat. Has never voted Republican.",
+    "voting_history": "First voted in 2012 (Obama). Voted Clinton (2016), Biden (2020). Votes in midterms when he remembers. Voted for Stacey Abrams in Georgia governor's race.",
+    "political_engagement": "Moderately engaged. Follows politics on Twitter/X and podcasts (Pod Save America, The Breakfast Club). Volunteered for voter registration drives in 2020. Has donated small amounts ($25-50) to candidates he likes.",
+    "media_diet": "Twitter/X, YouTube news clips, The Atlanta Journal-Constitution, NPR on his commute. Skeptical of cable news but will watch CNN for major events."
+  },
+  "social_views": {
+    "immigration": "Generally pro-immigration. Sees parallels between the immigrant experience and the Black American experience. Supports DACA and a path to citizenship. Thinks both parties use immigration as a wedge issue.",
+    "race": "Believes systemic racism is real and pervasive but does not define himself primarily through grievance. Supports police reform but not abolition. Thinks Black communities need both external structural change and internal investment.",
+    "gender": "Supports gender equality. His wife earns less than him for a demanding job and that frustrates both of them. Supportive of women's reproductive rights. Trying to raise his daughter without restrictive gender norms.",
+    "religion_society": "Faith is personally important. Church is a social and spiritual anchor. Believes religion should inform moral character but not be legislated. Uncomfortable with the politicization of Christianity by the religious right."
+  },
+  "local_context": {
+    "state_facts": "Georgia flipped blue in 2020 presidential election for the first time since 1992. Atlanta metro is a major hub for Black middle-class growth. Georgia passed a restrictive voting law (SB 202) in 2021.",
+    "local_issues": "Traffic and sprawl in the Atlanta metro are major quality-of-life concerns. Gentrification is pushing Black families out of historic neighborhoods. Public school quality varies dramatically by zip code.",
+    "community": "Active in his church community. Knows most of his neighbors. The suburb has a mix of Black and white families, generally friendly. Participates in a fathers' group at church."
+  }
+}

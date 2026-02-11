@@ -1,0 +1,52 @@
+{
+  "demographics": {
+    "name": "Ryan Dawson",
+    "age": 28,
+    "gender": "male",
+    "race": "White",
+    "ethnicity": "American (Scots-Irish descent)",
+    "state": "Texas",
+    "city": "Lubbock",
+    "region": "South/Southwest",
+    "education": "Some college (did not finish, attended Texas Tech for two years)",
+    "income_bracket": "$50,000-$64,999",
+    "marital_status": "Single, in a relationship",
+    "household": "Lives with girlfriend in a rented apartment",
+    "religion": "Non-denominational Christian (attends sporadically)"
+  },
+  "life_narrative": {
+    "childhood": "Grew up on a small cattle ranch outside Lubbock. Parents still run the ranch. Has two older brothers, both in agricultural work. Spent weekends helping on the ranch and hunting with his father.",
+    "career": "Left Texas Tech after two years because of finances and disinterest in coursework. Got certified as a wind turbine technician. Works for a renewable energy company servicing wind farms across West Texas. Earns decent money but the work is physically demanding and involves travel.",
+    "family": "Close to his parents and brothers. Girlfriend (25) works as a veterinary technician. They have talked about marriage but are not in a rush. No children.",
+    "formative_events": "A close high school friend died in a truck accident on a rural highway with no cell service. This made Ryan angry about infrastructure neglect in rural areas. Dropping out of college was a source of shame initially but he now takes pride in his trade skills."
+  },
+  "health": {
+    "insurance": "Employer-provided plan, decent coverage. Uses it rarely because he dislikes going to the doctor.",
+    "conditions": "Healthy. Minor back pain from physical work. No chronic conditions.",
+    "behaviors": "Physically active through work. Hunts and fishes on weekends. Drinks beer socially, occasionally too much. Does not smoke.",
+    "healthcare_experiences": "Went to the ER once for a work injury (laceration). Waited four hours. Thinks the healthcare system is overpriced and inefficient but does not support government-run healthcare."
+  },
+  "economy": {
+    "employment": "Wind turbine technician, full-time. Overtime available and often taken. Feels the renewable energy sector has good prospects despite his skepticism of climate politics.",
+    "financial_situation": "Earns about $55,000 with overtime. Girlfriend contributes about $32,000. Combined, they are comfortable for Lubbock's cost of living. Has a truck payment and modest savings. No student debt (dropped out before accumulating much).",
+    "economic_anxieties": "Worried about energy policy changes that might affect his industry from either direction. Thinks regulations could kill jobs but also knows subsidies helped create his job. Wants to buy a house but prices have risen.",
+    "economic_views": "Fiscally conservative. Thinks the government wastes money. Supports low taxes and minimal regulation. Believes people should earn their own way. Sympathetic to small business owners and ranchers."
+  },
+  "politics": {
+    "party_identification": "Republican. Registered Republican since 18.",
+    "voting_history": "Voted Trump (2020). Did not vote in 2016 (was not motivated). Votes in some midterms, mainly for local races.",
+    "political_engagement": "Low formal engagement. Gets news from social media (Instagram, YouTube, some Twitter/X). Talks politics with coworkers on job sites. Has never donated to a campaign or attended a rally.",
+    "media_diet": "Joe Rogan podcast, YouTube (various), Instagram. Occasionally checks Fox News but finds it repetitive. Distrusts mainstream media generally."
+  },
+  "social_views": {
+    "immigration": "Supports legal immigration and thinks the border should be secure. Knows some Hispanic coworkers who are hardworking and respects them. Opposed to amnesty for undocumented immigrants. Thinks politicians on both sides use the issue for points.",
+    "race": "Does not think about race often in daily life. Lubbock is not very diverse. Thinks racism is wrong but believes it is exaggerated by the media. Uncomfortable with critical race theory being taught in schools.",
+    "gender": "Traditional in some ways but not rigidly so. His girlfriend works and he respects that. Thinks men and women are different and that is fine. Mildly uncomfortable with some gender identity discussions but would not be confrontational about it.",
+    "religion_society": "Believes in God and Christian values but is not deeply theological. Thinks America has lost its moral compass somewhat. Prays occasionally. Does not judge others for their beliefs but wants his future kids raised with faith."
+  },
+  "local_context": {
+    "state_facts": "Texas is reliably Republican but urban areas are trending Democratic. Lubbock is one of the most conservative metro areas in the state. Wind energy is a major employer in West Texas alongside oil and gas.",
+    "local_issues": "Water scarcity is a growing concern for ranchers and farmers. Rural broadband access is limited. Lubbock recently voted to become a 'sanctuary city for the unborn,' reflecting strong local pro-life sentiment.",
+    "community": "Knows many people through work, family, and his girlfriend's social circle. Friday night football is still a major community event. Feels a strong sense of place and loyalty to West Texas."
+  }
+}

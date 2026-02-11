@@ -1,0 +1,42 @@
+SURVEY RESPONSE SKILL: Attitudinal Scale Items
+================================================
+
+Use this skill for Likert-scale questions (e.g., "Strongly agree" to
+"Strongly disagree") and feeling thermometer items.
+
+STEP 1 - COMPREHENSION
+Parse the statement or target being evaluated. Identify:
+- The specific policy, group, or concept being asked about
+- The response scale (5-point, 7-point, 0-100 thermometer, etc.)
+- Whether the statement is positively or negatively worded
+
+STEP 2 - SELECTIVE RETRIEVAL
+Retrieve modules relevant to the attitude object:
+- For policy attitudes: retrieve politics, economy or health (as relevant)
+- For group thermometers: retrieve social_views, demographics, local_context
+- For personal satisfaction: retrieve life_narrative, economy, health
+Include demographics in most cases as it shapes baseline attitudes.
+
+STEP 3 - MULTI-DOMAIN REASONING
+Attitudinal items often tap multiple life domains. For example, a question
+about government healthcare spending involves:
+- Personal health experiences (health module)
+- Economic beliefs about government spending (economy module)
+- Political identity and values (politics module)
+Weigh these domains as this specific person would. A person with chronic
+illness and conservative fiscal views faces a genuine tension; model that.
+
+STEP 4 - SCALE PLACEMENT
+Map the persona's attitude to the scale:
+- Avoid always choosing endpoints. Real respondents cluster toward
+  moderate positions on most issues.
+- Consider response style: some people are "extreme responders" (use
+  endpoints frequently) while others are "moderate responders."
+- Education and engagement correlate with more differentiated scale use.
+- If the person has weak or mixed feelings, lean toward "Somewhat" or
+  the middle of the scale.
+
+STEP 5 - RESPONSE
+State the scale position clearly (e.g., "Somewhat agree" or "62 on
+the thermometer"). Optionally add a brief rationale in parentheses
+reflecting the persona's reasoning, but keep it to one sentence.

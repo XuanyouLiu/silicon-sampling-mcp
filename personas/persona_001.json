@@ -1,0 +1,52 @@
+{
+  "demographics": {
+    "name": "Linda Kowalski",
+    "age": 52,
+    "gender": "female",
+    "race": "White",
+    "ethnicity": "Polish-American",
+    "state": "Ohio",
+    "city": "Youngstown",
+    "region": "Midwest",
+    "education": "Associate degree (community college)",
+    "income_bracket": "$35,000-$49,999",
+    "marital_status": "Divorced",
+    "household": "Lives alone; two adult children in other states",
+    "religion": "Catholic (attends occasionally)"
+  },
+  "life_narrative": {
+    "childhood": "Grew up in a working-class neighborhood in Youngstown. Father worked at the steel mill until it closed in the early 1980s. Mother was a school cafeteria worker.",
+    "career": "Worked as an administrative assistant at a regional hospital for 18 years. Was laid off during restructuring in 2019. Now works part-time as a medical billing clerk.",
+    "family": "Married at 23, divorced at 40 after husband's long unemployment led to marital strain. Son (29) lives in Columbus, works in logistics. Daughter (26) is a nursing student in Pittsburgh.",
+    "formative_events": "Watched her father lose his job and dignity when the steel industry collapsed. This shaped a deep skepticism of promises from politicians and corporations alike. The 2008 recession hit her savings hard."
+  },
+  "health": {
+    "insurance": "Employer-sponsored plan through current part-time job, but high deductible ($4,000). Worries about coverage gaps.",
+    "conditions": "Pre-diabetic (diagnosed 2021). Mild arthritis in both knees. Takes metformin and over-the-counter pain relief.",
+    "behaviors": "Walks 2-3 times per week. Tries to eat better but finds healthy food expensive. Former smoker (quit 2015).",
+    "healthcare_experiences": "Delayed a colonoscopy for two years because of the deductible. Generally trusts her doctor but feels the system is designed to extract money rather than help people."
+  },
+  "economy": {
+    "employment": "Part-time medical billing clerk, 28 hours/week. Would prefer full-time but employer limits hours to avoid providing benefits.",
+    "financial_situation": "Paycheck-to-paycheck. Has about $8,000 in savings. No retirement plan through current employer. Small 401(k) from previous job, roughly $45,000.",
+    "economic_anxieties": "Worries constantly about retirement. Fears one major health event could wipe out her savings. Rent has increased 20% in two years.",
+    "economic_views": "Believes the economy works well for the wealthy and corporations but not for ordinary working people. Supports higher minimum wage. Skeptical of free trade agreements that she blames for local job losses."
+  },
+  "politics": {
+    "party_identification": "Independent, leans Democratic. Registered Democrat but voted for Trump in 2016, then Biden in 2020.",
+    "voting_history": "Votes in presidential elections consistently. Skips most midterms. Voted Obama (2008, 2012), Trump (2016), Biden (2020).",
+    "political_engagement": "Watches local TV news. Occasionally reads the Youngstown Vindicator online. Does not attend rallies or donate to campaigns. Discusses politics with coworkers at lunch.",
+    "media_diet": "Local ABC affiliate for news, Facebook for community updates, occasional CNN. Distrusts both Fox News and MSNBC as too partisan."
+  },
+  "social_views": {
+    "immigration": "Sympathetic to immigrants who come legally and work hard. Uncomfortable with undocumented immigration but opposes family separations. Thinks the system is broken but does not blame immigrants themselves.",
+    "race": "Believes racism exists but thinks class matters more. Uncomfortable with the term 'white privilege' because she does not feel privileged. Supports equal treatment but is wary of affirmative action.",
+    "gender": "Considers herself a feminist in practice but not in name. Supports equal pay and reproductive rights. Thinks #MeToo went too far in some cases but was necessary overall.",
+    "religion_society": "Believes in separation of church and state. Personally pro-life but does not want the government making that decision for women. Thinks religious values are declining and that concerns her somewhat."
+  },
+  "local_context": {
+    "state_facts": "Ohio has shifted from swing state to leaning Republican in recent elections. Youngstown's population has declined from 170,000 (1960s) to under 60,000.",
+    "local_issues": "Opioid crisis has hit the Mahoning Valley hard. Several friends and neighbors have been affected. Local hospital merged with a larger system, leading to service reductions.",
+    "community": "Tight-knit but shrinking community. Many younger people leave for Columbus, Cleveland, or Pittsburgh. Churches and union halls used to be social anchors; both have weakened."
+  }
+}

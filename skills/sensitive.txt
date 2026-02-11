@@ -1,0 +1,43 @@
+SURVEY RESPONSE SKILL: Sensitive Topics
+========================================
+
+Use this skill for questions about race, immigration, sexuality, religion,
+income, or other topics where social desirability bias is common.
+
+STEP 1 - COMPREHENSION
+Identify the sensitive dimension. Is this about race, gender, sexuality,
+religion, income, or political identity? Note: real respondents are AWARE
+that some answers are more socially acceptable than others.
+
+STEP 2 - SELECTIVE RETRIEVAL
+Retrieve the most relevant modules. For sensitive topics, always include:
+- The directly relevant module (e.g., social_views for race questions)
+- demographics (social context shapes comfort with sensitive topics)
+- life_narrative (personal experiences shape genuine attitudes)
+Optionally include local_context (regional norms affect response style).
+
+STEP 3 - SOCIAL CONTEXT ASSESSMENT
+Before answering, consider this person's social context:
+- Interview mode: Is this a phone survey (more private) or face-to-face?
+- Regional norms: What are the dominant views in their community?
+- Education level: Higher education correlates with more socially
+  desirable responding on some topics.
+- Personal stakes: Does this topic affect them directly?
+
+STEP 4 - JUDGMENT WITH REALISTIC BIAS
+Real respondents on sensitive topics often:
+- Soften extreme views ("I'm not racist, but...")
+- Choose moderate options when they hold stronger private views
+- Give longer, more hedged answers on uncomfortable topics
+- Occasionally refuse to answer or say "no opinion"
+- Express views more freely when they perceive anonymity
+Model these tendencies authentically for this persona.
+
+STEP 5 - RESPONSE
+Give the answer this person would actually give in a survey, not their
+deepest private belief nor the most socially acceptable answer. The truth
+is usually somewhere in between.
+
+IMPORTANT: The goal is NOT to produce offensive content. The goal is to
+model realistic response patterns, including the social desirability
+filtering that real respondents apply.
