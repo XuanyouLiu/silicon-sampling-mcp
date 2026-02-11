@@ -6,6 +6,8 @@ A Model Context Protocol (MCP) server implementing **selective persona retrieval
 
 ## Overview
 
+![Framework Architecture](framework.png)
+
 This server operationalizes the cognitive model of survey response (Tourangeau et al., 2000) by storing persona information in **modular databases** and allowing LLMs to **selectively retrieve** only the modules relevant to each survey question. The three layers of the framework map to:
 
 | Layer | Role | Implementation |
