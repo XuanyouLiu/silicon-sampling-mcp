@@ -57,6 +57,7 @@ mcp = FastMCP(
 _active_persona: Optional[str] = None
 _personas: dict[str, dict] = {}
 _retrieval_log: list[dict] = []
+_skill_selection_log: list[dict] = []
 
 
 def _load_personas() -> None:
@@ -301,30 +302,39 @@ def get_persona_modules(modules: list[str], question_context: str = "") -> str:
 
 @mcp.tool()
 def get_retrieval_log() -> str:
-    """Get the log of all persona module retrievals in the current session.
+    """Get the log of all Skill selections and persona module retrievals.
 
-    This tool supports RQ3 of the framework: analyzing whether retrieval
-    patterns correspond to question-relevant memory access as predicted
-    by the cognitive model of survey response. Researchers can examine
-    which modules the model chose to retrieve for different question domains.
+    This tool supports RQ3 of the framework: analyzing whether the model's
+    Skill selections and retrieval patterns correspond to question-relevant
+    cognitive processing as predicted by the cognitive survey response model.
+    Researchers can examine which Skills and modules the model chose for
+    different question domains.
     """
     return json.dumps({
-        "session_retrievals": _retrieval_log,
-        "total_retrievals": len(_retrieval_log),
+        "skill_selections": _skill_selection_log,
+        "total_skill_selections": len(_skill_selection_log),
+        "module_retrievals": _retrieval_log,
+        "total_module_retrievals": len(_retrieval_log),
     }, indent=2)
 
 
 @mcp.tool()
 def clear_retrieval_log() -> str:
-    """Clear the retrieval log. Call between experimental conditions."""
-    global _retrieval_log
+    """Clear all logs (skill selections and module retrievals). Call between experimental conditions."""
+    global _retrieval_log, _skill_selection_log
     _retrieval_log = []
-    return json.dumps({"status": "Retrieval log cleared."})
+    _skill_selection_log = []
+    return json.dumps({"status": "All logs cleared (skill selections and module retrievals)."})
 
 
 @mcp.tool()
-def get_survey_skill(skill_type: str = "general") -> str:
-    """Load a survey response skill (structured reasoning procedure).
+def get_survey_skill(skill_type: str = "general", question_context: str = "") -> str:
+    """Select and load a survey response skill (structured reasoning procedure).
+
+    The model should call this tool after reading each survey question,
+    choosing the skill type that best matches the question. This mirrors
+    how real respondents intuitively shift cognitive strategies depending
+    on the question type. The selection is logged for analysis.
 
     Skills correspond to the judgment stage of the cognitive model. They
     instruct the model on how to process each survey question: identify
@@ -332,10 +342,15 @@ def get_survey_skill(skill_type: str = "general") -> str:
     select an answer.
 
     Args:
-        skill_type: Type of skill to load. Options:
+        skill_type: Type of skill to load. The model should choose based
+            on the question content:
             "general" - standard survey response procedure
-            "sensitive" - for sensitive/controversial topics
-            "attitudinal" - for Likert-scale attitude items
+            "sensitive" - for sensitive/controversial topics (race,
+                immigration, sexuality, religion, income)
+            "attitudinal" - for Likert-scale attitude items and
+                feeling thermometers
+        question_context: Brief description of the survey question being
+            answered. Used for logging skill selection patterns.
     """
     skill_content = _load_skill(skill_type)
     if skill_content is None:
@@ -344,6 +359,14 @@ def get_survey_skill(skill_type: str = "general") -> str:
             "error": f"Skill '{skill_type}' not found.",
             "available_skills": available,
         })
+
+    # Log the skill selection for analysis
+    log_entry = {
+        "persona_id": _active_persona,
+        "question_context": question_context,
+        "skill_selected": skill_type,
+    }
+    _skill_selection_log.append(log_entry)
 
     return json.dumps({
         "skill_type": skill_type,
@@ -371,6 +394,8 @@ def get_framework_status() -> str:
         "skills": {
             "available": available_skills,
             "count": len(available_skills),
+            "selections_this_session": len(_skill_selection_log),
+            "note": "Model selects Skill per question (model-driven)",
         },
         "mcp": {
             "personas_in_database": len(_personas),
