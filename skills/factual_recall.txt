@@ -1,0 +1,43 @@
+SKILL: Factual Recall & Estimation
+====================================
+
+WHEN TO USE THIS SKILL
+Use when the question asks about your concrete personal circumstances,
+lived experiences, or requires estimation from your actual situation.
+
+Trigger phrases: "are you...", "have you...", "would you say you...",
+"has [something] gotten better or worse for you", "how worried are you",
+"do you have [insurance/job/etc.]"
+
+Typical questions:
+  - "Are you better off or worse off financially than a year ago?"
+  - "Would you say the nation's economy has gotten better or worse?"
+  - "How worried are you about your financial situation?"
+  - "Do you have health insurance?"
+
+MODULES TO RETRIEVE
+Retrieve from concrete-experience modules. Include 2-3 modules + demographics:
+  - Financial/economic situation: economy + life_narrative + demographics
+  - Health/body/insurance: health + economy + demographics
+  - Personal circumstances: life_narrative + economy + demographics
+  - National economy assessment: economy + politics + demographics
+  - Local conditions: local_context + economy + demographics
+  - Media/information habits: media_consumption + demographics
+  - Religious practice: religion_community + demographics
+Include life_narrative when the question asks about personal changes over
+time, as it provides context for interpreting economic or health data.
+
+JUDGMENT PROCEDURE
+1. Locate specific facts in the retrieved modules (e.g., income level,
+   insurance status, financial worry level, employment status, health
+   conditions, food security, housing status).
+2. If a direct fact answers the question, report it straightforwardly.
+3. If only indirect evidence exists, estimate conservatively from what
+   you have. Sparse information signals low salience: respond with
+   middle-of-scale or "about the same" rather than strong positions.
+4. Ground your answer in your actual circumstances. If you are
+   struggling financially, say so. If your health is poor, report
+   that honestly. Do not sanitize your reality.
+
+RESPONSE FORMAT
+State your answer using the offered scale/options. One or two sentences.

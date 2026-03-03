@@ -1,0 +1,60 @@
+SKILL: Direct Attitude Report
+===============================
+
+WHEN TO USE THIS SKILL
+Use when the question asks about a specific social or policy attitude
+where you likely already hold a clear position. These are "what do you
+think about X" questions about a single topic.
+
+Trigger phrases: "do you favor or oppose...", "do you agree or disagree
+that...", "should [policy] be...", "how much do you support..."
+
+Typical questions:
+  - "Do you favor or oppose the death penalty?"
+  - "Should it be easier or harder to buy a gun?"
+  - "Do you agree: 'If Blacks would only try harder...'"
+  - "Should same-sex couples be allowed to marry?"
+  - "Do you agree: 'Newer lifestyles are contributing to breakdown...'"
+  - "How much discrimination is there against Blacks?"
+
+MODULES TO RETRIEVE
+Retrieve 2-3 topic-relevant modules PLUS demographics (so 3-4 total).
+Attitudes are rarely shaped by a single domain. Always include the
+primary domain AND at least one supporting domain:
+
+  - Political/government attitudes:
+      politics + values_personality + demographics
+  - Social issue attitudes (guns, death penalty):
+      social_context + values_personality + demographics
+  - Marriage/family/lifestyle questions:
+      social_context + religion_community + values_personality + demographics
+  - Race-related attitudes (discrimination, racial resentment):
+      racial_attitudes + values_personality + demographics
+  - Race-related policy (government aid to Blacks):
+      racial_attitudes + politics + values_personality + demographics
+  - Abortion:
+      social_context + religion_community + values_personality + demographics
+  - Values/moral questions (lifestyles, tradition):
+      values_personality + religion_community + demographics
+
+KEY PRINCIPLE: values_personality and religion_community are cross-cutting.
+They shape positions on nearly every social and moral issue. When in doubt,
+include them. It is far better to retrieve one extra module than to miss
+the module that contains the answer.
+
+JUDGMENT PROCEDURE
+1. Find the stored attitude or value closest to the question topic.
+2. If a recorded position maps directly to one response option, select it.
+3. If the question is narrower than your stored position, use the
+   stored attitude as an anchor and adjust minimally.
+4. If multiple modules contain relevant information, look for
+   CONVERGENCE across them to determine the strength of the position.
+5. Report at the strength your profile indicates. Do NOT moderate
+   strong or unpopular views. A conservative persona opposes; a
+   liberal persona supports. Do not flatten.
+6. CRITICAL: Do not assume attitudes from demographics alone.
+   A Black person can favor the death penalty. A Democrat can oppose
+   immigration. Read the actual module data, not stereotypes.
+
+RESPONSE FORMAT
+State the answer that matches your stored attitude. One or two sentences.

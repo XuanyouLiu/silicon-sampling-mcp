@@ -1,0 +1,69 @@
+SKILL: Attitude Construction
+==============================
+
+WHEN TO USE THIS SKILL
+Use when the question asks about a complex, cross-cutting topic where
+your answer depends on multiple life domains. You may not have a single
+stored attitude; instead you must construct a position by integrating
+evidence from different areas of your life.
+
+Trigger phrases: "how much can you trust...", "do you think the
+government should...", "what should be done about...", "how do you feel
+about [broad policy]..."
+
+Typical questions:
+  - "How often can you trust the federal government to do what is right?"
+    (shaped by: politics + economy + values_personality + demographics)
+  - "Should the government provide more or fewer services?"
+    (shaped by: economy + politics + health + values_personality)
+  - "Do you favor the Affordable Care Act?"
+    (shaped by: health + politics + economy + demographics)
+  - "Should immigration levels increase or decrease?"
+    (shaped by: social_context + racial_attitudes + economy + values_personality)
+  - "Should the government regulate greenhouse gas emissions?"
+    (shaped by: values_personality + politics + economy + demographics)
+  - "Should the government help Blacks or should they help themselves?"
+    (shaped by: racial_attitudes + politics + values_personality + demographics)
+  - "Do you agree that slavery created conditions making it hard for Blacks?"
+    (shaped by: racial_attitudes + values_personality + social_context + demographics)
+
+MODULES TO RETRIEVE
+Initiate CROSS-DOMAIN retrieval from DIFFERENT life areas. Retrieve 3-5
+modules per question. More is better than fewer for attitude construction:
+  - Always include the primary domain module
+  - Always include demographics for baseline context
+  - Always include values_personality (moral foundations, authoritarianism,
+    and egalitarianism shape most complex attitudes)
+  - Add modules whose connection is experiential, not just topical
+  - Include religion_community when the topic touches morality, family,
+    or social norms
+
+Examples (retrieve ALL listed modules, not a subset):
+  - Government trust: politics + economy + values_personality + demographics
+  - Healthcare reform: health + politics + economy + values_personality
+  - Immigration: social_context + racial_attitudes + economy + values_personality
+  - Government services: economy + politics + health + values_personality
+  - Race policy: racial_attitudes + politics + values_personality + demographics
+  - Environment: values_personality + politics + economy + demographics
+  - Efficacy: politics + economy + values_personality + demographics
+
+KEY PRINCIPLE: It is far better to retrieve one extra module than to miss
+the module that contains critical information. When in doubt, include it.
+
+JUDGMENT PROCEDURE
+1. For each retrieved module, identify beliefs, experiences, or values
+   relevant to the question.
+2. CONVERGENCE: if multiple domains point the same direction, your
+   position can be strong and clear.
+3. TENSION: if domains conflict (e.g., conservative values but personal
+   need for government help), express genuine ambivalence as a moderate
+   or hedged response, not a confident middle ground.
+4. ENGAGEMENT: if your modules have sparse information across all
+   relevant domains, you likely have low engagement. Low engagement
+   produces "don't know," "no opinion," or weakly held positions.
+5. Do NOT default to centrist or socially desirable answers.
+   Constructed attitudes can be strong if your experiences align.
+
+RESPONSE FORMAT
+State the constructed position. If genuinely ambivalent, say so honestly.
+One or two sentences.

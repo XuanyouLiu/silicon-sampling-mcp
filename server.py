@@ -10,119 +10,53 @@ survey question.
 Usage:
     python server.py                    # stdio transport (for Cursor/Claude Desktop)
     python server.py --transport sse    # SSE transport (for web clients)
+    python server.py --allowed-modules demographics politics economy
 """
 
 import json
-import os
+import sys
 import argparse
 from pathlib import Path
 from typing import Optional
 
 from mcp.server.fastmcp import FastMCP
 
-# ---------------------------------------------------------------------------
-# Configuration
-# ---------------------------------------------------------------------------
-
 PERSONAS_DIR = Path(__file__).parent / "personas"
 SKILLS_DIR = Path(__file__).parent / "skills"
 RULES_DIR = Path(__file__).parent / "rules"
 
 VALID_MODULES = [
-    "demographics",
-    "life_narrative",
-    "health",
-    "economy",
-    "politics",
-    "social_views",
-    "local_context",
+    "demographics", "life_narrative", "politics", "economy",
+    "health", "social_context", "racial_attitudes",
+    "values_personality", "media_consumption",
+    "religion_community", "local_context",
+    "policy_positions", "civic_participation",
 ]
-
-# ---------------------------------------------------------------------------
-# Server setup
-# ---------------------------------------------------------------------------
 
 mcp = FastMCP(
     "Silicon Sampling Server",
-    version="0.1.0",
-    description=(
+    instructions=(
         "MCP server for selective persona retrieval in silicon sampling. "
-        "Implements modular persona databases that LLMs can query per-question, "
-        "operationalizing the selective retrieval stage of the cognitive survey "
-        "response model (Tourangeau et al., 2000)."
+        "Implements modular persona databases that LLMs can query per-question."
     ),
 )
 
-# In-memory state
-_active_persona: Optional[str] = None
 _personas: dict[str, dict] = {}
 _retrieval_log: list[dict] = []
-_skill_selection_log: list[dict] = []
+_skill_log: list[dict] = []
+_allowed_modules: Optional[set[str]] = None
 
 
 def _load_personas() -> None:
-    """Load all persona JSON files from the personas directory."""
     global _personas
     _personas = {}
     if not PERSONAS_DIR.exists():
         return
     for fp in sorted(PERSONAS_DIR.glob("*.json")):
         with open(fp, "r", encoding="utf-8") as f:
-            data = json.load(f)
-            persona_id = fp.stem
-            _personas[persona_id] = data
+            _personas[fp.stem] = json.load(f)
 
 
-def _load_skill(skill_name: str) -> Optional[str]:
-    """Load a skill template from the skills directory."""
-    skill_path = SKILLS_DIR / f"{skill_name}.txt"
-    if skill_path.exists():
-        return skill_path.read_text(encoding="utf-8")
-    return None
-
-
-def _load_rule(rule_name: str) -> Optional[str]:
-    """Load a rule template from the rules directory."""
-    rule_path = RULES_DIR / f"{rule_name}.txt"
-    if rule_path.exists():
-        return rule_path.read_text(encoding="utf-8")
-    return None
-
-
-def _render_rule(rule_template: str, persona: dict) -> str:
-    """Fill in a rule template with persona demographic information."""
-    demo = persona.get("demographics", {})
-    replacements = {
-        "{name}": str(demo.get("name", "Unknown")),
-        "{age}": str(demo.get("age", "?")),
-        "{gender}": str(demo.get("gender", "person")),
-        "{city}": str(demo.get("city", "?")),
-        "{state}": str(demo.get("state", "?")),
-        "{education}": str(demo.get("education", "?")),
-        "{race}": str(demo.get("race", "?")),
-        "{religion}": str(demo.get("religion", "?")),
-    }
-    # Build full backstory for baseline/rules-only conditions
-    if "{full_backstory}" in rule_template:
-        backstory_parts = []
-        for module_name in VALID_MODULES:
-            module_data = persona.get(module_name)
-            if module_data:
-                backstory_parts.append(f"[{module_name}]")
-                if isinstance(module_data, dict):
-                    for k, v in module_data.items():
-                        backstory_parts.append(f"  {k}: {v}")
-                else:
-                    backstory_parts.append(f"  {module_data}")
-        replacements["{full_backstory}"] = "\n".join(backstory_parts)
-
-    result = rule_template
-    for placeholder, value in replacements.items():
-        result = result.replace(placeholder, value)
-    return result
-
-
-# Load personas on startup
 _load_personas()
 
 
@@ -132,320 +66,159 @@ _load_personas()
 
 
 @mcp.tool()
-def list_personas() -> str:
-    """List all available personas in the database.
+def get_survey_skill(skill_type: str, question_context: str = "") -> str:
+    """Select and load a survey response Skill (reasoning procedure).
 
-    Returns a summary of each persona including their ID and a brief
-    demographic description. Use this to select which persona to activate
-    before running a survey simulation.
-    """
-    _load_personas()
-    if not _personas:
-        return json.dumps({"error": "No personas found. Add JSON files to the personas/ directory."})
+    Call this FIRST after reading each survey question. Choose the Skill
+    that matches the question type:
 
-    summaries = []
-    for pid, data in _personas.items():
-        demo = data.get("demographics", {})
-        summary = {
-            "persona_id": pid,
-            "name": demo.get("name", "Unknown"),
-            "age": demo.get("age", "?"),
-            "gender": demo.get("gender", "?"),
-            "state": demo.get("state", "?"),
-            "education": demo.get("education", "?"),
-            "party_id": data.get("politics", {}).get("party_identification", "?"),
-        }
-        summaries.append(summary)
+      "factual_recall" - about YOUR personal situation or circumstances.
+          e.g., "Are you better off financially?", "Has the economy
+          gotten better or worse?", "How worried are you about money?"
 
-    return json.dumps({"personas": summaries, "count": len(summaries)}, indent=2)
+      "direct_attitude" - about a SINGLE social/policy topic where you
+          have a position. e.g., "Do you favor the death penalty?",
+          "Should gun access be easier or harder?", "Do you agree that
+          newer lifestyles are contributing to breakdown?"
 
-
-@mcp.tool()
-def set_active_persona(persona_id: str) -> str:
-    """Set the active persona for the current survey simulation session.
-
-    This must be called before using get_persona_modules. It establishes
-    which respondent the model is simulating, corresponding to the Rules
-    layer of the framework (identity anchor).
+      "attitude_construction" - about a COMPLEX topic spanning multiple
+          life areas. e.g., "How much can you trust the government?",
+          "Should the government provide more services?", "Do you favor
+          the Affordable Care Act?", "Should immigration increase?"
 
     Args:
-        persona_id: The ID of the persona to activate (from list_personas).
+        skill_type: One of "factual_recall", "direct_attitude", "attitude_construction".
+        question_context: Brief description of the survey question.
     """
-    global _active_persona
-    _load_personas()
+    skill_path = SKILLS_DIR / f"{skill_type}.txt"
+    if not skill_path.exists():
+        available = [f.stem for f in SKILLS_DIR.glob("*.txt")] if SKILLS_DIR.exists() else []
+        return json.dumps({"error": f"Skill '{skill_type}' not found.", "available": available})
 
-    if persona_id not in _personas:
-        available = list(_personas.keys())
-        return json.dumps({
-            "error": f"Persona '{persona_id}' not found.",
-            "available_personas": available,
-        })
-
-    _active_persona = persona_id
-    demo = _personas[persona_id].get("demographics", {})
+    _skill_log.append({"question": question_context, "skill": skill_type})
 
     return json.dumps({
-        "status": "active",
-        "persona_id": persona_id,
-        "identity_anchor": (
-            f"You are {demo.get('name', 'a person')}, "
-            f"a {demo.get('age', '?')}-year-old {demo.get('gender', 'person')} "
-            f"living in {demo.get('city', '?')}, {demo.get('state', '?')}. "
-            f"Answer survey questions naturally, as you would in a real telephone survey."
-        ),
-        "available_modules": VALID_MODULES,
-    })
-
-
-@mcp.tool()
-def get_rule(rule_name: str = "survey_respondent") -> str:
-    """Load and render a Rule template for the active persona.
-
-    Rules are the first layer of the framework, establishing the respondent's
-    identity anchor, response style constraints, and behavioral guardrails.
-    This corresponds to the comprehension stage of the cognitive model
-    (Tourangeau et al., 2000).
-
-    The rule template is populated with the active persona's demographic
-    information. For ablation experiments, different rules implement
-    different conditions:
-    - "survey_respondent": Full framework rule (with selective retrieval)
-    - "baseline_static": Static backstory baseline (Argyle et al., 2023)
-    - "rules_only": Rules without Skills or MCP
-
-    Args:
-        rule_name: Name of the rule to load. Default is "survey_respondent".
-    """
-    if _active_persona is None:
-        return json.dumps({
-            "error": "No active persona. Call set_active_persona first.",
-        })
-
-    persona = _personas.get(_active_persona)
-    if persona is None:
-        return json.dumps({"error": f"Persona '{_active_persona}' not found."})
-
-    rule_template = _load_rule(rule_name)
-    if rule_template is None:
-        available = [f.stem for f in RULES_DIR.glob("*.txt")] if RULES_DIR.exists() else []
-        return json.dumps({
-            "error": f"Rule '{rule_name}' not found.",
-            "available_rules": available,
-        })
-
-    rendered = _render_rule(rule_template, persona)
-
-    return json.dumps({
-        "rule_name": rule_name,
-        "persona_id": _active_persona,
-        "rendered_rule": rendered,
+        "skill_type": skill_type,
+        "instructions": skill_path.read_text(encoding="utf-8"),
     }, indent=2)
 
 
 @mcp.tool()
-def get_persona_modules(modules: list[str], question_context: str = "") -> str:
-    """Selectively retrieve specific persona modules for the active persona.
+def get_persona_modules(persona_id: str, modules: list[str], question_context: str = "") -> str:
+    """Selectively retrieve specific persona modules.
 
-    This is the core tool implementing selective retrieval. Before answering
-    a survey question, the model should identify which modules are relevant
-    and retrieve only those, mirroring how real respondents selectively draw
-    on relevant memories (Tourangeau et al., 2000).
+    Call this AFTER selecting a Skill. Retrieve ONLY modules relevant to
+    the current survey question. Real respondents do not scan their entire
+    autobiography; they selectively recall information relevant to the
+    question at hand.
+
+    Available modules (13 total, ~170 fields per persona):
+      demographics       - Age, gender, race, education, income, marital status, religion, state, region
+      life_narrative     - Summary of life circumstances
+      politics           - Party ID, ideology, approval, voting behavior, candidate trait evaluations, election legitimacy, democratic satisfaction, feelings toward political entities, issue positions, participation
+      economy            - Employment, income, housing, investments, food security, bills, economic outlook, trade views, feelings toward economic groups
+      health             - Self-reported health, insurance, healthcare concerns, mental health, life satisfaction, medicare/drug pricing views, 10 health conditions
+      social_context     - Social trust, PC sensitivity, violence views, feelings toward social groups, immigration positions, police funding, transgender policy, affirmative action, gun permits
+      racial_attitudes   - Feelings toward racial/ethnic groups, discrimination perceptions for multiple groups, racial equality views, race-related policy views
+      values_personality - Moral foundations, authoritarianism, science attitudes, environment-economy tradeoff, egalitarianism
+      media_consumption  - News sources, social media use and hours, Fox/CNN use, political news interest, feelings toward institutions
+      religion_community - Religious tradition, attendance, importance, children, community ties, loneliness
+      local_context      - State, region
+      policy_positions   - Government spending priorities (social security, schools, crime, childcare, aid to poor, environment, border security, infrastructure), candidate issue placements, candidate competence ratings
+      civic_participation - Feelings toward US and UN, campaign volunteering, signs, buttons
+
+    Retrieve only the modules relevant to the current question. Do NOT retrieve all modules.
 
     Args:
-        modules: List of module names to retrieve. Valid modules:
-            demographics, life_narrative, health, economy, politics,
-            social_views, local_context.
-        question_context: Optional brief description of the survey question
-            being answered. Used for logging retrieval patterns.
+        persona_id: The ID of the persona (e.g., "anes_001").
+        modules: List of module names to retrieve.
+        question_context: Brief description of the survey question.
     """
-    if _active_persona is None:
-        return json.dumps({
-            "error": "No active persona. Call set_active_persona first.",
-        })
+    if not _personas:
+        _load_personas()
 
-    persona = _personas.get(_active_persona)
+    persona = _personas.get(persona_id)
     if persona is None:
-        return json.dumps({"error": f"Persona '{_active_persona}' not found in database."})
+        return json.dumps({"error": f"Persona '{persona_id}' not found.", "available": list(_personas.keys())})
 
-    # Validate requested modules
-    invalid = [m for m in modules if m not in VALID_MODULES]
+    if _allowed_modules is not None:
+        effective_modules = [m for m in modules if m in _allowed_modules]
+        unavailable = [m for m in modules if m not in _allowed_modules]
+    else:
+        effective_modules = modules
+        unavailable = []
+
+    invalid = [m for m in effective_modules if m not in VALID_MODULES]
     if invalid:
-        return json.dumps({
-            "error": f"Invalid module(s): {invalid}",
-            "valid_modules": VALID_MODULES,
-        })
+        return json.dumps({"error": f"Invalid module(s): {invalid}", "valid_modules": VALID_MODULES})
 
-    # Retrieve requested modules
     retrieved = {}
-    for module_name in modules:
-        module_data = persona.get(module_name)
-        if module_data is not None:
-            retrieved[module_name] = module_data
+    for mod in effective_modules:
+        data = persona.get(mod)
+        if data is not None:
+            retrieved[mod] = data
         else:
-            retrieved[module_name] = {"note": "Module exists but has no data for this persona."}
+            retrieved[mod] = {"note": "No data available for this module."}
 
-    # Log the retrieval pattern for analysis
-    log_entry = {
-        "persona_id": _active_persona,
-        "question_context": question_context,
+    for mod in unavailable:
+        retrieved[mod] = {"note": "Module not available in this experimental phase."}
+
+    _retrieval_log.append({
+        "persona_id": persona_id,
+        "question": question_context,
         "modules_requested": modules,
-        "modules_returned": list(retrieved.keys()),
-    }
-    _retrieval_log.append(log_entry)
+        "modules_returned": effective_modules,
+    })
 
     return json.dumps({
-        "persona_id": _active_persona,
-        "modules_retrieved": modules,
+        "persona_id": persona_id,
+        "modules_retrieved": effective_modules,
         "data": retrieved,
     }, indent=2)
 
 
 @mcp.tool()
 def get_retrieval_log() -> str:
-    """Get the log of all Skill selections and persona module retrievals.
-
-    This tool supports RQ3 of the framework: analyzing whether the model's
-    Skill selections and retrieval patterns correspond to question-relevant
-    cognitive processing as predicted by the cognitive survey response model.
-    Researchers can examine which Skills and modules the model chose for
-    different question domains.
-    """
+    """Get the log of all Skill selections and module retrievals this session."""
     return json.dumps({
-        "skill_selections": _skill_selection_log,
-        "total_skill_selections": len(_skill_selection_log),
+        "skill_selections": _skill_log,
         "module_retrievals": _retrieval_log,
-        "total_module_retrievals": len(_retrieval_log),
+        "total_skills": len(_skill_log),
+        "total_retrievals": len(_retrieval_log),
     }, indent=2)
-
-
-@mcp.tool()
-def clear_retrieval_log() -> str:
-    """Clear all logs (skill selections and module retrievals). Call between experimental conditions."""
-    global _retrieval_log, _skill_selection_log
-    _retrieval_log = []
-    _skill_selection_log = []
-    return json.dumps({"status": "All logs cleared (skill selections and module retrievals)."})
-
-
-@mcp.tool()
-def get_survey_skill(skill_type: str = "general", question_context: str = "") -> str:
-    """Select and load a survey response skill (structured reasoning procedure).
-
-    The model should call this tool after reading each survey question,
-    choosing the skill type that best matches the question. This mirrors
-    how real respondents intuitively shift cognitive strategies depending
-    on the question type. The selection is logged for analysis.
-
-    Skills correspond to the judgment stage of the cognitive model. They
-    instruct the model on how to process each survey question: identify
-    relevant personal circumstances, retrieve appropriate modules, and
-    select an answer.
-
-    Args:
-        skill_type: Type of skill to load. The model should choose based
-            on the question content:
-            "general" - standard survey response procedure
-            "sensitive" - for sensitive/controversial topics (race,
-                immigration, sexuality, religion, income)
-            "attitudinal" - for Likert-scale attitude items and
-                feeling thermometers
-        question_context: Brief description of the survey question being
-            answered. Used for logging skill selection patterns.
-    """
-    skill_content = _load_skill(skill_type)
-    if skill_content is None:
-        available = [f.stem for f in SKILLS_DIR.glob("*.txt")] if SKILLS_DIR.exists() else []
-        return json.dumps({
-            "error": f"Skill '{skill_type}' not found.",
-            "available_skills": available,
-        })
-
-    # Log the skill selection for analysis
-    log_entry = {
-        "persona_id": _active_persona,
-        "question_context": question_context,
-        "skill_selected": skill_type,
-    }
-    _skill_selection_log.append(log_entry)
-
-    return json.dumps({
-        "skill_type": skill_type,
-        "instructions": skill_content,
-    }, indent=2)
-
-
-@mcp.tool()
-def get_framework_status() -> str:
-    """Get the current status of all three framework layers.
-
-    Returns the state of Rules (active persona), Skills (available),
-    and MCP (retrieval statistics). Useful for verifying that the
-    framework is properly configured before running a simulation.
-    """
-    available_skills = [f.stem for f in SKILLS_DIR.glob("*.txt")] if SKILLS_DIR.exists() else []
-    available_rules = [f.stem for f in RULES_DIR.glob("*.txt")] if RULES_DIR.exists() else []
-
-    status = {
-        "rules": {
-            "active_persona": _active_persona,
-            "persona_loaded": _active_persona is not None,
-            "available_rule_templates": available_rules,
-        },
-        "skills": {
-            "available": available_skills,
-            "count": len(available_skills),
-            "selections_this_session": len(_skill_selection_log),
-            "note": "Model selects Skill per question (model-driven)",
-        },
-        "mcp": {
-            "personas_in_database": len(_personas),
-            "available_modules": VALID_MODULES,
-            "retrievals_this_session": len(_retrieval_log),
-        },
-    }
-    return json.dumps(status, indent=2)
-
-
-# ---------------------------------------------------------------------------
-# MCP Resources (read-only data the client can browse)
-# ---------------------------------------------------------------------------
 
 
 @mcp.resource("persona://schema")
 def get_schema() -> str:
     """Return the persona database schema (module definitions)."""
     schema = {
-        "description": "Modular persona database schema for silicon sampling",
         "modules": {
-            "demographics": "Age, gender, region, education, income, ethnicity, household composition",
-            "life_narrative": "Family history, career trajectory, formative life events, personal milestones",
-            "health": "Insurance status, chronic conditions, health behaviors, healthcare experiences",
-            "economy": "Employment situation, financial anxieties, economic outlook, class identity",
-            "politics": "Party identification, past voting behavior, political engagement, media diet",
-            "social_views": "Stances on immigration, race, gender, religion, cultural issues",
-            "local_context": "State/regional facts, local news awareness, community characteristics",
+            "demographics": "Age, gender, race, education, income, marital status, religion, state, region",
+            "life_narrative": "Summary of life circumstances",
+            "politics": "Party ID, ideology, approval, candidate feeling thermometers, participation, defense/jobs positions",
+            "economy": "Employment status, income, housing, investments, food security, bills, economic outlook, trade views, feelings toward economic groups",
+            "health": "Insurance, healthcare concerns, mental health, 10 diagnosed health conditions",
+            "social_context": "Social trust, PC sensitivity, violence views, feelings toward social groups (LGBTQ, Muslims, etc.), immigration positions",
+            "racial_attitudes": "Feelings toward racial/ethnic groups, discrimination perceptions, race-related policy views",
+            "values_personality": "Moral foundations (harm, fairness, loyalty, authority, purity), authoritarianism, science attitudes, environment-economy tradeoff",
+            "media_consumption": "News sources (TV, newspaper, radio, internet, social media), political news interest, feelings toward institutions (scientists, media, police, military)",
+            "religion_community": "Religious tradition, attendance, importance, children, community ties",
+            "local_context": "State, region",
         },
-        "design_principles": [
-            "Each module is self-contained and can be retrieved independently",
-            "Modules map to distinct domains of survey questions",
-            "Granularity allows the model to perform selective retrieval per question",
-            "Schema is extensible: researchers can add domain-specific modules",
-        ],
     }
     return json.dumps(schema, indent=2)
 
 
-# ---------------------------------------------------------------------------
-# Entry point
-# ---------------------------------------------------------------------------
-
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Silicon Sampling MCP Server")
+    parser.add_argument("--transport", choices=["stdio", "sse"], default="stdio")
     parser.add_argument(
-        "--transport",
-        choices=["stdio", "sse"],
-        default="stdio",
-        help="Transport mode (default: stdio)",
+        "--allowed-modules", nargs="+", default=None,
+        help="Restrict retrievable modules for phase-based experiments",
     )
     args = parser.parse_args()
+
+    if args.allowed_modules:
+        _allowed_modules = set(args.allowed_modules)
+
     mcp.run(transport=args.transport)

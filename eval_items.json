@@ -1,0 +1,4567 @@
+[
+  {
+    "variable": "V241229",
+    "label": "Trust in federal government",
+    "question_text": "How often can you trust the federal government in Washington to do what is right? Always, most of the time, about half the time, some of the time, or never?",
+    "response_options": {
+      "1": "Always",
+      "2": "Most of the time",
+      "3": "About half the time",
+      "4": "Some of the time",
+      "5": "Never"
+    },
+    "domain": "politics",
+    "expected_skill": "attitude_construction",
+    "ground_truth": {
+      "anes_001": {
+        "code": "4",
+        "label": "Some of the time"
+      },
+      "anes_002": {
+        "code": "2",
+        "label": "Most of the time"
+      },
+      "anes_003": {
+        "code": "4",
+        "label": "Some of the time"
+      },
+      "anes_004": {
+        "code": "3",
+        "label": "About half the time"
+      },
+      "anes_005": {
+        "code": "4",
+        "label": "Some of the time"
+      },
+      "anes_006": {
+        "code": "5",
+        "label": "Never"
+      },
+      "anes_007": {
+        "code": "5",
+        "label": "Never"
+      },
+      "anes_008": {
+        "code": "3",
+        "label": "About half the time"
+      },
+      "anes_009": {
+        "code": "3",
+        "label": "About half the time"
+      },
+      "anes_010": {
+        "code": "4",
+        "label": "Some of the time"
+      },
+      "anes_011": {
+        "code": "3",
+        "label": "About half the time"
+      },
+      "anes_012": {
+        "code": "2",
+        "label": "Most of the time"
+      },
+      "anes_013": {
+        "code": "4",
+        "label": "Some of the time"
+      },
+      "anes_014": {
+        "code": "4",
+        "label": "Some of the time"
+      },
+      "anes_015": {
+        "code": "4",
+        "label": "Some of the time"
+      },
+      "anes_016": {
+        "code": "2",
+        "label": "Most of the time"
+      },
+      "anes_017": {
+        "code": "3",
+        "label": "About half the time"
+      },
+      "anes_018": {
+        "code": "4",
+        "label": "Some of the time"
+      },
+      "anes_019": {
+        "code": "2",
+        "label": "Most of the time"
+      },
+      "anes_020": {
+        "code": "4",
+        "label": "Some of the time"
+      },
+      "anes_021": {
+        "code": "3",
+        "label": "About half the time"
+      },
+      "anes_022": {
+        "code": "4",
+        "label": "Some of the time"
+      },
+      "anes_023": {
+        "code": "4",
+        "label": "Some of the time"
+      },
+      "anes_024": {
+        "code": "4",
+        "label": "Some of the time"
+      },
+      "anes_025": {
+        "code": "5",
+        "label": "Never"
+      },
+      "anes_026": {
+        "code": "5",
+        "label": "Never"
+      },
+      "anes_027": {
+        "code": "4",
+        "label": "Some of the time"
+      },
+      "anes_028": {
+        "code": "4",
+        "label": "Some of the time"
+      },
+      "anes_029": {
+        "code": "4",
+        "label": "Some of the time"
+      },
+      "anes_030": {
+        "code": "4",
+        "label": "Some of the time"
+      },
+      "anes_031": {
+        "code": "4",
+        "label": "Some of the time"
+      },
+      "anes_032": {
+        "code": "4",
+        "label": "Some of the time"
+      },
+      "anes_033": {
+        "code": "4",
+        "label": "Some of the time"
+      },
+      "anes_034": {
+        "code": "2",
+        "label": "Most of the time"
+      },
+      "anes_035": {
+        "code": "3",
+        "label": "About half the time"
+      },
+      "anes_036": {
+        "code": "4",
+        "label": "Some of the time"
+      },
+      "anes_037": {
+        "code": "3",
+        "label": "About half the time"
+      },
+      "anes_038": {
+        "code": "4",
+        "label": "Some of the time"
+      },
+      "anes_039": {
+        "code": "2",
+        "label": "Most of the time"
+      },
+      "anes_040": {
+        "code": "5",
+        "label": "Never"
+      },
+      "anes_041": {
+        "code": "5",
+        "label": "Never"
+      },
+      "anes_042": {
+        "code": "4",
+        "label": "Some of the time"
+      },
+      "anes_043": {
+        "code": "4",
+        "label": "Some of the time"
+      },
+      "anes_044": {
+        "code": "4",
+        "label": "Some of the time"
+      },
+      "anes_045": {
+        "code": "3",
+        "label": "About half the time"
+      },
+      "anes_046": {
+        "code": "3",
+        "label": "About half the time"
+      },
+      "anes_047": {
+        "code": "2",
+        "label": "Most of the time"
+      },
+      "anes_048": {
+        "code": "5",
+        "label": "Never"
+      },
+      "anes_049": {
+        "code": "4",
+        "label": "Some of the time"
+      },
+      "anes_050": {
+        "code": "5",
+        "label": "Never"
+      }
+    }
+  },
+  {
+    "variable": "V241231",
+    "label": "Government run by big interests or for all",
+    "question_text": "Would you say the government is pretty much run by a few big interests looking out for themselves or that it is run for the benefit of all the people?",
+    "response_options": {
+      "1": "Run by a few big interests",
+      "2": "For the benefit of all the people"
+    },
+    "domain": "politics",
+    "expected_skill": "direct_attitude",
+    "ground_truth": {
+      "anes_001": {
+        "code": "1",
+        "label": "Run by a few big interests"
+      },
+      "anes_002": {
+        "code": "1",
+        "label": "Run by a few big interests"
+      },
+      "anes_003": {
+        "code": "1",
+        "label": "Run by a few big interests"
+      },
+      "anes_004": {
+        "code": "1",
+        "label": "Run by a few big interests"
+      },
+      "anes_005": {
+        "code": "2",
+        "label": "For the benefit of all the people"
+      },
+      "anes_006": {
+        "code": "1",
+        "label": "Run by a few big interests"
+      },
+      "anes_007": {
+        "code": "1",
+        "label": "Run by a few big interests"
+      },
+      "anes_008": {
+        "code": "1",
+        "label": "Run by a few big interests"
+      },
+      "anes_009": {
+        "code": "1",
+        "label": "Run by a few big interests"
+      },
+      "anes_010": {
+        "code": "1",
+        "label": "Run by a few big interests"
+      },
+      "anes_011": {
+        "code": "1",
+        "label": "Run by a few big interests"
+      },
+      "anes_012": {
+        "code": "2",
+        "label": "For the benefit of all the people"
+      },
+      "anes_013": {
+        "code": "1",
+        "label": "Run by a few big interests"
+      },
+      "anes_014": {
+        "code": "1",
+        "label": "Run by a few big interests"
+      },
+      "anes_015": {
+        "code": "1",
+        "label": "Run by a few big interests"
+      },
+      "anes_016": {
+        "code": "1",
+        "label": "Run by a few big interests"
+      },
+      "anes_017": {
+        "code": "1",
+        "label": "Run by a few big interests"
+      },
+      "anes_018": {
+        "code": "1",
+        "label": "Run by a few big interests"
+      },
+      "anes_019": {
+        "code": "1",
+        "label": "Run by a few big interests"
+      },
+      "anes_020": {
+        "code": "1",
+        "label": "Run by a few big interests"
+      },
+      "anes_021": {
+        "code": "1",
+        "label": "Run by a few big interests"
+      },
+      "anes_022": {
+        "code": "1",
+        "label": "Run by a few big interests"
+      },
+      "anes_023": {
+        "code": "1",
+        "label": "Run by a few big interests"
+      },
+      "anes_024": {
+        "code": "1",
+        "label": "Run by a few big interests"
+      },
+      "anes_025": {
+        "code": "1",
+        "label": "Run by a few big interests"
+      },
+      "anes_026": {
+        "code": "1",
+        "label": "Run by a few big interests"
+      },
+      "anes_027": {
+        "code": "1",
+        "label": "Run by a few big interests"
+      },
+      "anes_028": {
+        "code": "1",
+        "label": "Run by a few big interests"
+      },
+      "anes_029": {
+        "code": "1",
+        "label": "Run by a few big interests"
+      },
+      "anes_030": {
+        "code": "1",
+        "label": "Run by a few big interests"
+      },
+      "anes_031": {
+        "code": "1",
+        "label": "Run by a few big interests"
+      },
+      "anes_032": {
+        "code": "1",
+        "label": "Run by a few big interests"
+      },
+      "anes_033": {
+        "code": "1",
+        "label": "Run by a few big interests"
+      },
+      "anes_034": {
+        "code": "2",
+        "label": "For the benefit of all the people"
+      },
+      "anes_035": {
+        "code": "1",
+        "label": "Run by a few big interests"
+      },
+      "anes_036": {
+        "code": "1",
+        "label": "Run by a few big interests"
+      },
+      "anes_037": {
+        "code": "1",
+        "label": "Run by a few big interests"
+      },
+      "anes_038": {
+        "code": "1",
+        "label": "Run by a few big interests"
+      },
+      "anes_039": {
+        "code": "1",
+        "label": "Run by a few big interests"
+      },
+      "anes_040": {
+        "code": "1",
+        "label": "Run by a few big interests"
+      },
+      "anes_041": {
+        "code": "1",
+        "label": "Run by a few big interests"
+      },
+      "anes_042": {
+        "code": "1",
+        "label": "Run by a few big interests"
+      },
+      "anes_043": {
+        "code": "1",
+        "label": "Run by a few big interests"
+      },
+      "anes_044": {
+        "code": "1",
+        "label": "Run by a few big interests"
+      },
+      "anes_045": {
+        "code": "1",
+        "label": "Run by a few big interests"
+      },
+      "anes_046": {
+        "code": "1",
+        "label": "Run by a few big interests"
+      },
+      "anes_047": {
+        "code": "1",
+        "label": "Run by a few big interests"
+      },
+      "anes_048": {
+        "code": "1",
+        "label": "Run by a few big interests"
+      },
+      "anes_049": {
+        "code": "1",
+        "label": "Run by a few big interests"
+      },
+      "anes_050": {
+        "code": "1",
+        "label": "Run by a few big interests"
+      }
+    }
+  },
+  {
+    "variable": "V241232",
+    "label": "Government waste of tax money",
+    "question_text": "Do you think that people in government waste a lot of the money we pay in taxes, waste some of it, or don't waste very much of it?",
+    "response_options": {
+      "1": "Waste a lot",
+      "2": "Waste some",
+      "3": "Don't waste very much"
+    },
+    "domain": "politics",
+    "expected_skill": "direct_attitude",
+    "ground_truth": {
+      "anes_001": {
+        "code": "2",
+        "label": "Waste some"
+      },
+      "anes_002": {
+        "code": "3",
+        "label": "Don't waste very much"
+      },
+      "anes_003": {
+        "code": "1",
+        "label": "Waste a lot"
+      },
+      "anes_004": {
+        "code": "1",
+        "label": "Waste a lot"
+      },
+      "anes_005": {
+        "code": "2",
+        "label": "Waste some"
+      },
+      "anes_006": {
+        "code": "1",
+        "label": "Waste a lot"
+      },
+      "anes_007": {
+        "code": "1",
+        "label": "Waste a lot"
+      },
+      "anes_008": {
+        "code": "2",
+        "label": "Waste some"
+      },
+      "anes_009": {
+        "code": "1",
+        "label": "Waste a lot"
+      },
+      "anes_010": {
+        "code": "1",
+        "label": "Waste a lot"
+      },
+      "anes_011": {
+        "code": "2",
+        "label": "Waste some"
+      },
+      "anes_012": {
+        "code": "2",
+        "label": "Waste some"
+      },
+      "anes_013": {
+        "code": "1",
+        "label": "Waste a lot"
+      },
+      "anes_014": {
+        "code": "1",
+        "label": "Waste a lot"
+      },
+      "anes_015": {
+        "code": "2",
+        "label": "Waste some"
+      },
+      "anes_016": {
+        "code": "2",
+        "label": "Waste some"
+      },
+      "anes_017": {
+        "code": "1",
+        "label": "Waste a lot"
+      },
+      "anes_018": {
+        "code": "1",
+        "label": "Waste a lot"
+      },
+      "anes_019": {
+        "code": "2",
+        "label": "Waste some"
+      },
+      "anes_020": {
+        "code": "1",
+        "label": "Waste a lot"
+      },
+      "anes_021": {
+        "code": "1",
+        "label": "Waste a lot"
+      },
+      "anes_022": {
+        "code": "2",
+        "label": "Waste some"
+      },
+      "anes_023": {
+        "code": "1",
+        "label": "Waste a lot"
+      },
+      "anes_024": {
+        "code": "2",
+        "label": "Waste some"
+      },
+      "anes_025": {
+        "code": "1",
+        "label": "Waste a lot"
+      },
+      "anes_026": {
+        "code": "2",
+        "label": "Waste some"
+      },
+      "anes_027": {
+        "code": "2",
+        "label": "Waste some"
+      },
+      "anes_028": {
+        "code": "1",
+        "label": "Waste a lot"
+      },
+      "anes_029": {
+        "code": "2",
+        "label": "Waste some"
+      },
+      "anes_030": {
+        "code": "1",
+        "label": "Waste a lot"
+      },
+      "anes_031": {
+        "code": "2",
+        "label": "Waste some"
+      },
+      "anes_032": {
+        "code": "1",
+        "label": "Waste a lot"
+      },
+      "anes_033": {
+        "code": "1",
+        "label": "Waste a lot"
+      },
+      "anes_034": {
+        "code": "2",
+        "label": "Waste some"
+      },
+      "anes_035": {
+        "code": "2",
+        "label": "Waste some"
+      },
+      "anes_036": {
+        "code": "1",
+        "label": "Waste a lot"
+      },
+      "anes_037": {
+        "code": "1",
+        "label": "Waste a lot"
+      },
+      "anes_038": {
+        "code": "1",
+        "label": "Waste a lot"
+      },
+      "anes_039": {
+        "code": "1",
+        "label": "Waste a lot"
+      },
+      "anes_040": {
+        "code": "1",
+        "label": "Waste a lot"
+      },
+      "anes_041": {
+        "code": "1",
+        "label": "Waste a lot"
+      },
+      "anes_042": {
+        "code": "3",
+        "label": "Don't waste very much"
+      },
+      "anes_043": {
+        "code": "2",
+        "label": "Waste some"
+      },
+      "anes_044": {
+        "code": "1",
+        "label": "Waste a lot"
+      },
+      "anes_045": {
+        "code": "2",
+        "label": "Waste some"
+      },
+      "anes_046": {
+        "code": "1",
+        "label": "Waste a lot"
+      },
+      "anes_047": {
+        "code": "2",
+        "label": "Waste some"
+      },
+      "anes_048": {
+        "code": "1",
+        "label": "Waste a lot"
+      },
+      "anes_049": {
+        "code": "1",
+        "label": "Waste a lot"
+      },
+      "anes_050": {
+        "code": "1",
+        "label": "Waste a lot"
+      }
+    }
+  },
+  {
+    "variable": "V241233",
+    "label": "External efficacy: people like me have no say",
+    "question_text": "How much do you agree or disagree with the following statement: 'People like me don't have any say about what the government does.' Do you agree strongly, agree somewhat, neither agree nor disagree, disagree somewhat, or disagree strongly?",
+    "response_options": {
+      "1": "Agree strongly",
+      "2": "Agree somewhat",
+      "3": "Neither agree nor disagree",
+      "4": "Disagree somewhat",
+      "5": "Disagree strongly"
+    },
+    "domain": "politics",
+    "expected_skill": "attitude_construction",
+    "ground_truth": {
+      "anes_001": {
+        "code": "4",
+        "label": "Disagree somewhat"
+      },
+      "anes_002": {
+        "code": "3",
+        "label": "Neither agree nor disagree"
+      },
+      "anes_003": {
+        "code": "2",
+        "label": "Agree somewhat"
+      },
+      "anes_004": {
+        "code": "2",
+        "label": "Agree somewhat"
+      },
+      "anes_005": {
+        "code": "4",
+        "label": "Disagree somewhat"
+      },
+      "anes_006": {
+        "code": "1",
+        "label": "Agree strongly"
+      },
+      "anes_007": {
+        "code": "3",
+        "label": "Neither agree nor disagree"
+      },
+      "anes_008": {
+        "code": "4",
+        "label": "Disagree somewhat"
+      },
+      "anes_009": {
+        "code": "2",
+        "label": "Agree somewhat"
+      },
+      "anes_010": {
+        "code": "2",
+        "label": "Agree somewhat"
+      },
+      "anes_011": {
+        "code": "4",
+        "label": "Disagree somewhat"
+      },
+      "anes_012": {
+        "code": "5",
+        "label": "Disagree strongly"
+      },
+      "anes_013": {
+        "code": "3",
+        "label": "Neither agree nor disagree"
+      },
+      "anes_014": {
+        "code": "3",
+        "label": "Neither agree nor disagree"
+      },
+      "anes_015": {
+        "code": "2",
+        "label": "Agree somewhat"
+      },
+      "anes_016": {
+        "code": "4",
+        "label": "Disagree somewhat"
+      },
+      "anes_017": {
+        "code": "4",
+        "label": "Disagree somewhat"
+      },
+      "anes_018": {
+        "code": "4",
+        "label": "Disagree somewhat"
+      },
+      "anes_019": {
+        "code": "4",
+        "label": "Disagree somewhat"
+      },
+      "anes_020": {
+        "code": "2",
+        "label": "Agree somewhat"
+      },
+      "anes_021": {
+        "code": "3",
+        "label": "Neither agree nor disagree"
+      },
+      "anes_022": {
+        "code": "3",
+        "label": "Neither agree nor disagree"
+      },
+      "anes_023": {
+        "code": "2",
+        "label": "Agree somewhat"
+      },
+      "anes_024": {
+        "code": "4",
+        "label": "Disagree somewhat"
+      },
+      "anes_025": {
+        "code": "2",
+        "label": "Agree somewhat"
+      },
+      "anes_026": {
+        "code": "2",
+        "label": "Agree somewhat"
+      },
+      "anes_027": {
+        "code": "4",
+        "label": "Disagree somewhat"
+      },
+      "anes_028": {
+        "code": "4",
+        "label": "Disagree somewhat"
+      },
+      "anes_029": {
+        "code": "3",
+        "label": "Neither agree nor disagree"
+      },
+      "anes_030": {
+        "code": "3",
+        "label": "Neither agree nor disagree"
+      },
+      "anes_031": {
+        "code": "3",
+        "label": "Neither agree nor disagree"
+      },
+      "anes_032": {
+        "code": "2",
+        "label": "Agree somewhat"
+      },
+      "anes_033": {
+        "code": "2",
+        "label": "Agree somewhat"
+      },
+      "anes_034": {
+        "code": "4",
+        "label": "Disagree somewhat"
+      },
+      "anes_035": {
+        "code": "2",
+        "label": "Agree somewhat"
+      },
+      "anes_036": {
+        "code": "2",
+        "label": "Agree somewhat"
+      },
+      "anes_037": {
+        "code": "4",
+        "label": "Disagree somewhat"
+      },
+      "anes_038": {
+        "code": "2",
+        "label": "Agree somewhat"
+      },
+      "anes_039": {
+        "code": "2",
+        "label": "Agree somewhat"
+      },
+      "anes_040": {
+        "code": "2",
+        "label": "Agree somewhat"
+      },
+      "anes_041": {
+        "code": "2",
+        "label": "Agree somewhat"
+      },
+      "anes_042": {
+        "code": "2",
+        "label": "Agree somewhat"
+      },
+      "anes_043": {
+        "code": "4",
+        "label": "Disagree somewhat"
+      },
+      "anes_044": {
+        "code": "4",
+        "label": "Disagree somewhat"
+      },
+      "anes_045": {
+        "code": "3",
+        "label": "Neither agree nor disagree"
+      },
+      "anes_046": {
+        "code": "4",
+        "label": "Disagree somewhat"
+      },
+      "anes_047": {
+        "code": "4",
+        "label": "Disagree somewhat"
+      },
+      "anes_048": {
+        "code": "3",
+        "label": "Neither agree nor disagree"
+      },
+      "anes_049": {
+        "code": "2",
+        "label": "Agree somewhat"
+      },
+      "anes_050": {
+        "code": "3",
+        "label": "Neither agree nor disagree"
+      }
+    }
+  },
+  {
+    "variable": "V241234",
+    "label": "External efficacy: public officials don't care",
+    "question_text": "How much do you agree or disagree with the following statement: 'Public officials don't care much what people like me think.' Do you agree strongly, agree somewhat, neither agree nor disagree, disagree somewhat, or disagree strongly?",
+    "response_options": {
+      "1": "Agree strongly",
+      "2": "Agree somewhat",
+      "3": "Neither agree nor disagree",
+      "4": "Disagree somewhat",
+      "5": "Disagree strongly"
+    },
+    "domain": "politics",
+    "expected_skill": "attitude_construction",
+    "ground_truth": {
+      "anes_001": {
+        "code": "4",
+        "label": "Disagree somewhat"
+      },
+      "anes_002": {
+        "code": "2",
+        "label": "Agree somewhat"
+      },
+      "anes_003": {
+        "code": "2",
+        "label": "Agree somewhat"
+      },
+      "anes_004": {
+        "code": "2",
+        "label": "Agree somewhat"
+      },
+      "anes_005": {
+        "code": "3",
+        "label": "Neither agree nor disagree"
+      },
+      "anes_006": {
+        "code": "3",
+        "label": "Neither agree nor disagree"
+      },
+      "anes_007": {
+        "code": "4",
+        "label": "Disagree somewhat"
+      },
+      "anes_008": {
+        "code": "4",
+        "label": "Disagree somewhat"
+      },
+      "anes_009": {
+        "code": "3",
+        "label": "Neither agree nor disagree"
+      },
+      "anes_010": {
+        "code": "4",
+        "label": "Disagree somewhat"
+      },
+      "anes_011": {
+        "code": "3",
+        "label": "Neither agree nor disagree"
+      },
+      "anes_012": {
+        "code": "4",
+        "label": "Disagree somewhat"
+      },
+      "anes_013": {
+        "code": "2",
+        "label": "Agree somewhat"
+      },
+      "anes_014": {
+        "code": "4",
+        "label": "Disagree somewhat"
+      },
+      "anes_015": {
+        "code": "2",
+        "label": "Agree somewhat"
+      },
+      "anes_016": {
+        "code": "1",
+        "label": "Agree strongly"
+      },
+      "anes_017": {
+        "code": "2",
+        "label": "Agree somewhat"
+      },
+      "anes_018": {
+        "code": "4",
+        "label": "Disagree somewhat"
+      },
+      "anes_019": {
+        "code": "2",
+        "label": "Agree somewhat"
+      },
+      "anes_020": {
+        "code": "4",
+        "label": "Disagree somewhat"
+      },
+      "anes_021": {
+        "code": "3",
+        "label": "Neither agree nor disagree"
+      },
+      "anes_022": {
+        "code": "4",
+        "label": "Disagree somewhat"
+      },
+      "anes_023": {
+        "code": "3",
+        "label": "Neither agree nor disagree"
+      },
+      "anes_024": {
+        "code": "4",
+        "label": "Disagree somewhat"
+      },
+      "anes_025": {
+        "code": "2",
+        "label": "Agree somewhat"
+      },
+      "anes_026": {
+        "code": "3",
+        "label": "Neither agree nor disagree"
+      },
+      "anes_027": {
+        "code": "3",
+        "label": "Neither agree nor disagree"
+      },
+      "anes_028": {
+        "code": "4",
+        "label": "Disagree somewhat"
+      },
+      "anes_029": {
+        "code": "3",
+        "label": "Neither agree nor disagree"
+      },
+      "anes_030": {
+        "code": "3",
+        "label": "Neither agree nor disagree"
+      },
+      "anes_031": {
+        "code": "4",
+        "label": "Disagree somewhat"
+      },
+      "anes_032": {
+        "code": "3",
+        "label": "Neither agree nor disagree"
+      },
+      "anes_033": {
+        "code": "2",
+        "label": "Agree somewhat"
+      },
+      "anes_034": {
+        "code": "2",
+        "label": "Agree somewhat"
+      },
+      "anes_035": {
+        "code": "3",
+        "label": "Neither agree nor disagree"
+      },
+      "anes_036": {
+        "code": "3",
+        "label": "Neither agree nor disagree"
+      },
+      "anes_037": {
+        "code": "5",
+        "label": "Disagree strongly"
+      },
+      "anes_038": {
+        "code": "4",
+        "label": "Disagree somewhat"
+      },
+      "anes_039": {
+        "code": "4",
+        "label": "Disagree somewhat"
+      },
+      "anes_040": {
+        "code": "2",
+        "label": "Agree somewhat"
+      },
+      "anes_041": {
+        "code": "2",
+        "label": "Agree somewhat"
+      },
+      "anes_042": {
+        "code": "4",
+        "label": "Disagree somewhat"
+      },
+      "anes_043": {
+        "code": "2",
+        "label": "Agree somewhat"
+      },
+      "anes_044": {
+        "code": "4",
+        "label": "Disagree somewhat"
+      },
+      "anes_045": {
+        "code": "3",
+        "label": "Neither agree nor disagree"
+      },
+      "anes_046": {
+        "code": "3",
+        "label": "Neither agree nor disagree"
+      },
+      "anes_047": {
+        "code": "4",
+        "label": "Disagree somewhat"
+      },
+      "anes_048": {
+        "code": "4",
+        "label": "Disagree somewhat"
+      },
+      "anes_049": {
+        "code": "3",
+        "label": "Neither agree nor disagree"
+      },
+      "anes_050": {
+        "code": "4",
+        "label": "Disagree somewhat"
+      }
+    }
+  },
+  {
+    "variable": "V241108",
+    "label": "National economy retrospective",
+    "question_text": "Would you say that over the past year the nation's economy has gotten better, stayed about the same, or gotten worse?",
+    "response_options": {
+      "1": "Gotten better",
+      "2": "Stayed about the same",
+      "5": "Gotten worse"
+    },
+    "domain": "economy",
+    "expected_skill": "factual_recall",
+    "ground_truth": {
+      "anes_002": {
+        "code": "1",
+        "label": "Gotten better"
+      },
+      "anes_003": {
+        "code": "5",
+        "label": "Gotten worse"
+      },
+      "anes_005": {
+        "code": "5",
+        "label": "Gotten worse"
+      },
+      "anes_006": {
+        "code": "2",
+        "label": "Stayed about the same"
+      },
+      "anes_008": {
+        "code": "1",
+        "label": "Gotten better"
+      },
+      "anes_009": {
+        "code": "2",
+        "label": "Stayed about the same"
+      },
+      "anes_010": {
+        "code": "5",
+        "label": "Gotten worse"
+      },
+      "anes_011": {
+        "code": "1",
+        "label": "Gotten better"
+      },
+      "anes_013": {
+        "code": "2",
+        "label": "Stayed about the same"
+      },
+      "anes_016": {
+        "code": "2",
+        "label": "Stayed about the same"
+      },
+      "anes_018": {
+        "code": "2",
+        "label": "Stayed about the same"
+      },
+      "anes_019": {
+        "code": "1",
+        "label": "Gotten better"
+      },
+      "anes_022": {
+        "code": "1",
+        "label": "Gotten better"
+      },
+      "anes_024": {
+        "code": "1",
+        "label": "Gotten better"
+      },
+      "anes_025": {
+        "code": "2",
+        "label": "Stayed about the same"
+      },
+      "anes_027": {
+        "code": "1",
+        "label": "Gotten better"
+      },
+      "anes_029": {
+        "code": "5",
+        "label": "Gotten worse"
+      },
+      "anes_030": {
+        "code": "2",
+        "label": "Stayed about the same"
+      },
+      "anes_031": {
+        "code": "1",
+        "label": "Gotten better"
+      },
+      "anes_032": {
+        "code": "2",
+        "label": "Stayed about the same"
+      },
+      "anes_033": {
+        "code": "2",
+        "label": "Stayed about the same"
+      },
+      "anes_034": {
+        "code": "1",
+        "label": "Gotten better"
+      },
+      "anes_035": {
+        "code": "1",
+        "label": "Gotten better"
+      },
+      "anes_037": {
+        "code": "1",
+        "label": "Gotten better"
+      },
+      "anes_038": {
+        "code": "2",
+        "label": "Stayed about the same"
+      },
+      "anes_039": {
+        "code": "1",
+        "label": "Gotten better"
+      },
+      "anes_040": {
+        "code": "2",
+        "label": "Stayed about the same"
+      },
+      "anes_041": {
+        "code": "2",
+        "label": "Stayed about the same"
+      },
+      "anes_042": {
+        "code": "1",
+        "label": "Gotten better"
+      },
+      "anes_043": {
+        "code": "1",
+        "label": "Gotten better"
+      },
+      "anes_044": {
+        "code": "1",
+        "label": "Gotten better"
+      },
+      "anes_046": {
+        "code": "2",
+        "label": "Stayed about the same"
+      },
+      "anes_047": {
+        "code": "1",
+        "label": "Gotten better"
+      },
+      "anes_049": {
+        "code": "2",
+        "label": "Stayed about the same"
+      }
+    }
+  },
+  {
+    "variable": "V241113",
+    "label": "Personal finances retrospective",
+    "question_text": "Would you say that you and your family are better off or worse off financially than you were a year ago?",
+    "response_options": {
+      "1": "Better off",
+      "2": "Worse off"
+    },
+    "domain": "economy",
+    "expected_skill": "factual_recall",
+    "ground_truth": {
+      "anes_001": {
+        "code": "2",
+        "label": "Worse off"
+      },
+      "anes_002": {
+        "code": "2",
+        "label": "Worse off"
+      },
+      "anes_003": {
+        "code": "2",
+        "label": "Worse off"
+      },
+      "anes_004": {
+        "code": "1",
+        "label": "Better off"
+      },
+      "anes_005": {
+        "code": "2",
+        "label": "Worse off"
+      },
+      "anes_006": {
+        "code": "1",
+        "label": "Better off"
+      },
+      "anes_007": {
+        "code": "2",
+        "label": "Worse off"
+      },
+      "anes_008": {
+        "code": "2",
+        "label": "Worse off"
+      },
+      "anes_009": {
+        "code": "1",
+        "label": "Better off"
+      },
+      "anes_010": {
+        "code": "2",
+        "label": "Worse off"
+      },
+      "anes_011": {
+        "code": "1",
+        "label": "Better off"
+      },
+      "anes_012": {
+        "code": "1",
+        "label": "Better off"
+      },
+      "anes_013": {
+        "code": "1",
+        "label": "Better off"
+      },
+      "anes_014": {
+        "code": "1",
+        "label": "Better off"
+      },
+      "anes_015": {
+        "code": "1",
+        "label": "Better off"
+      },
+      "anes_016": {
+        "code": "1",
+        "label": "Better off"
+      },
+      "anes_017": {
+        "code": "2",
+        "label": "Worse off"
+      },
+      "anes_018": {
+        "code": "1",
+        "label": "Better off"
+      },
+      "anes_019": {
+        "code": "2",
+        "label": "Worse off"
+      },
+      "anes_020": {
+        "code": "2",
+        "label": "Worse off"
+      },
+      "anes_021": {
+        "code": "2",
+        "label": "Worse off"
+      },
+      "anes_022": {
+        "code": "2",
+        "label": "Worse off"
+      },
+      "anes_023": {
+        "code": "2",
+        "label": "Worse off"
+      },
+      "anes_024": {
+        "code": "2",
+        "label": "Worse off"
+      },
+      "anes_025": {
+        "code": "1",
+        "label": "Better off"
+      },
+      "anes_026": {
+        "code": "1",
+        "label": "Better off"
+      },
+      "anes_027": {
+        "code": "2",
+        "label": "Worse off"
+      },
+      "anes_028": {
+        "code": "2",
+        "label": "Worse off"
+      },
+      "anes_029": {
+        "code": "2",
+        "label": "Worse off"
+      },
+      "anes_030": {
+        "code": "1",
+        "label": "Better off"
+      },
+      "anes_031": {
+        "code": "2",
+        "label": "Worse off"
+      },
+      "anes_032": {
+        "code": "1",
+        "label": "Better off"
+      },
+      "anes_033": {
+        "code": "1",
+        "label": "Better off"
+      },
+      "anes_034": {
+        "code": "2",
+        "label": "Worse off"
+      },
+      "anes_035": {
+        "code": "2",
+        "label": "Worse off"
+      },
+      "anes_036": {
+        "code": "1",
+        "label": "Better off"
+      },
+      "anes_037": {
+        "code": "2",
+        "label": "Worse off"
+      },
+      "anes_038": {
+        "code": "1",
+        "label": "Better off"
+      },
+      "anes_039": {
+        "code": "2",
+        "label": "Worse off"
+      },
+      "anes_040": {
+        "code": "1",
+        "label": "Better off"
+      },
+      "anes_041": {
+        "code": "1",
+        "label": "Better off"
+      },
+      "anes_042": {
+        "code": "1",
+        "label": "Better off"
+      },
+      "anes_043": {
+        "code": "2",
+        "label": "Worse off"
+      },
+      "anes_044": {
+        "code": "2",
+        "label": "Worse off"
+      },
+      "anes_045": {
+        "code": "1",
+        "label": "Better off"
+      },
+      "anes_046": {
+        "code": "1",
+        "label": "Better off"
+      },
+      "anes_047": {
+        "code": "1",
+        "label": "Better off"
+      },
+      "anes_048": {
+        "code": "1",
+        "label": "Better off"
+      },
+      "anes_049": {
+        "code": "1",
+        "label": "Better off"
+      },
+      "anes_050": {
+        "code": "1",
+        "label": "Better off"
+      }
+    }
+  },
+  {
+    "variable": "V241117",
+    "label": "Government spending and services",
+    "question_text": "Some people think the government should provide fewer services, even in areas such as health and education, in order to reduce spending. Other people feel it is important for the government to provide more services even if it means an increase in spending. Which view is closer to yours?",
+    "response_options": {
+      "1": "Government should provide fewer services and reduce spending",
+      "2": "Government should provide more services and increase spending"
+    },
+    "domain": "economy",
+    "expected_skill": "attitude_construction",
+    "ground_truth": {
+      "anes_001": {
+        "code": "2",
+        "label": "Government should provide more services and increase spending"
+      },
+      "anes_002": {
+        "code": "1",
+        "label": "Government should provide fewer services and reduce spending"
+      },
+      "anes_003": {
+        "code": "2",
+        "label": "Government should provide more services and increase spending"
+      },
+      "anes_004": {
+        "code": "2",
+        "label": "Government should provide more services and increase spending"
+      },
+      "anes_005": {
+        "code": "2",
+        "label": "Government should provide more services and increase spending"
+      },
+      "anes_006": {
+        "code": "2",
+        "label": "Government should provide more services and increase spending"
+      },
+      "anes_007": {
+        "code": "2",
+        "label": "Government should provide more services and increase spending"
+      },
+      "anes_009": {
+        "code": "2",
+        "label": "Government should provide more services and increase spending"
+      },
+      "anes_010": {
+        "code": "2",
+        "label": "Government should provide more services and increase spending"
+      },
+      "anes_011": {
+        "code": "1",
+        "label": "Government should provide fewer services and reduce spending"
+      },
+      "anes_012": {
+        "code": "1",
+        "label": "Government should provide fewer services and reduce spending"
+      },
+      "anes_013": {
+        "code": "2",
+        "label": "Government should provide more services and increase spending"
+      },
+      "anes_014": {
+        "code": "2",
+        "label": "Government should provide more services and increase spending"
+      },
+      "anes_015": {
+        "code": "2",
+        "label": "Government should provide more services and increase spending"
+      },
+      "anes_016": {
+        "code": "1",
+        "label": "Government should provide fewer services and reduce spending"
+      },
+      "anes_017": {
+        "code": "1",
+        "label": "Government should provide fewer services and reduce spending"
+      },
+      "anes_018": {
+        "code": "2",
+        "label": "Government should provide more services and increase spending"
+      },
+      "anes_019": {
+        "code": "1",
+        "label": "Government should provide fewer services and reduce spending"
+      },
+      "anes_020": {
+        "code": "2",
+        "label": "Government should provide more services and increase spending"
+      },
+      "anes_021": {
+        "code": "2",
+        "label": "Government should provide more services and increase spending"
+      },
+      "anes_022": {
+        "code": "2",
+        "label": "Government should provide more services and increase spending"
+      },
+      "anes_023": {
+        "code": "2",
+        "label": "Government should provide more services and increase spending"
+      },
+      "anes_024": {
+        "code": "1",
+        "label": "Government should provide fewer services and reduce spending"
+      },
+      "anes_025": {
+        "code": "2",
+        "label": "Government should provide more services and increase spending"
+      },
+      "anes_026": {
+        "code": "2",
+        "label": "Government should provide more services and increase spending"
+      },
+      "anes_027": {
+        "code": "1",
+        "label": "Government should provide fewer services and reduce spending"
+      },
+      "anes_028": {
+        "code": "2",
+        "label": "Government should provide more services and increase spending"
+      },
+      "anes_029": {
+        "code": "1",
+        "label": "Government should provide fewer services and reduce spending"
+      },
+      "anes_030": {
+        "code": "2",
+        "label": "Government should provide more services and increase spending"
+      },
+      "anes_031": {
+        "code": "2",
+        "label": "Government should provide more services and increase spending"
+      },
+      "anes_032": {
+        "code": "2",
+        "label": "Government should provide more services and increase spending"
+      },
+      "anes_033": {
+        "code": "2",
+        "label": "Government should provide more services and increase spending"
+      },
+      "anes_035": {
+        "code": "2",
+        "label": "Government should provide more services and increase spending"
+      },
+      "anes_036": {
+        "code": "2",
+        "label": "Government should provide more services and increase spending"
+      },
+      "anes_037": {
+        "code": "2",
+        "label": "Government should provide more services and increase spending"
+      },
+      "anes_038": {
+        "code": "2",
+        "label": "Government should provide more services and increase spending"
+      },
+      "anes_039": {
+        "code": "2",
+        "label": "Government should provide more services and increase spending"
+      },
+      "anes_040": {
+        "code": "2",
+        "label": "Government should provide more services and increase spending"
+      },
+      "anes_041": {
+        "code": "2",
+        "label": "Government should provide more services and increase spending"
+      },
+      "anes_042": {
+        "code": "2",
+        "label": "Government should provide more services and increase spending"
+      },
+      "anes_043": {
+        "code": "1",
+        "label": "Government should provide fewer services and reduce spending"
+      },
+      "anes_044": {
+        "code": "2",
+        "label": "Government should provide more services and increase spending"
+      },
+      "anes_045": {
+        "code": "2",
+        "label": "Government should provide more services and increase spending"
+      },
+      "anes_046": {
+        "code": "2",
+        "label": "Government should provide more services and increase spending"
+      },
+      "anes_047": {
+        "code": "1",
+        "label": "Government should provide fewer services and reduce spending"
+      },
+      "anes_048": {
+        "code": "2",
+        "label": "Government should provide more services and increase spending"
+      },
+      "anes_049": {
+        "code": "2",
+        "label": "Government should provide more services and increase spending"
+      },
+      "anes_050": {
+        "code": "2",
+        "label": "Government should provide more services and increase spending"
+      }
+    }
+  },
+  {
+    "variable": "V241210",
+    "label": "Affordable Care Act favor/oppose",
+    "question_text": "Do you favor, oppose, or neither favor nor oppose the health care reform law passed in 2010, also known as the Affordable Care Act or Obamacare? And would you say you favor/oppose it a great deal or somewhat?",
+    "response_options": {
+      "1": "Favor a great deal",
+      "2": "Favor somewhat",
+      "3": "Neither favor nor oppose",
+      "4": "Oppose somewhat",
+      "5": "Oppose a great deal"
+    },
+    "domain": "health",
+    "expected_skill": "attitude_construction",
+    "ground_truth": {
+      "anes_001": {
+        "code": "1",
+        "label": "Favor a great deal"
+      },
+      "anes_002": {
+        "code": "1",
+        "label": "Favor a great deal"
+      },
+      "anes_003": {
+        "code": "1",
+        "label": "Favor a great deal"
+      },
+      "anes_004": {
+        "code": "3",
+        "label": "Neither favor nor oppose"
+      },
+      "anes_005": {
+        "code": "1",
+        "label": "Favor a great deal"
+      },
+      "anes_006": {
+        "code": "1",
+        "label": "Favor a great deal"
+      },
+      "anes_007": {
+        "code": "5",
+        "label": "Oppose a great deal"
+      },
+      "anes_008": {
+        "code": "1",
+        "label": "Favor a great deal"
+      },
+      "anes_009": {
+        "code": "1",
+        "label": "Favor a great deal"
+      },
+      "anes_010": {
+        "code": "1",
+        "label": "Favor a great deal"
+      },
+      "anes_011": {
+        "code": "1",
+        "label": "Favor a great deal"
+      },
+      "anes_012": {
+        "code": "2",
+        "label": "Favor somewhat"
+      },
+      "anes_013": {
+        "code": "1",
+        "label": "Favor a great deal"
+      },
+      "anes_014": {
+        "code": "1",
+        "label": "Favor a great deal"
+      },
+      "anes_015": {
+        "code": "1",
+        "label": "Favor a great deal"
+      },
+      "anes_016": {
+        "code": "3",
+        "label": "Neither favor nor oppose"
+      },
+      "anes_017": {
+        "code": "1",
+        "label": "Favor a great deal"
+      },
+      "anes_018": {
+        "code": "1",
+        "label": "Favor a great deal"
+      },
+      "anes_019": {
+        "code": "1",
+        "label": "Favor a great deal"
+      },
+      "anes_020": {
+        "code": "5",
+        "label": "Oppose a great deal"
+      },
+      "anes_021": {
+        "code": "2",
+        "label": "Favor somewhat"
+      },
+      "anes_022": {
+        "code": "3",
+        "label": "Neither favor nor oppose"
+      },
+      "anes_023": {
+        "code": "1",
+        "label": "Favor a great deal"
+      },
+      "anes_024": {
+        "code": "1",
+        "label": "Favor a great deal"
+      },
+      "anes_025": {
+        "code": "1",
+        "label": "Favor a great deal"
+      },
+      "anes_026": {
+        "code": "1",
+        "label": "Favor a great deal"
+      },
+      "anes_027": {
+        "code": "1",
+        "label": "Favor a great deal"
+      },
+      "anes_028": {
+        "code": "3",
+        "label": "Neither favor nor oppose"
+      },
+      "anes_029": {
+        "code": "1",
+        "label": "Favor a great deal"
+      },
+      "anes_030": {
+        "code": "1",
+        "label": "Favor a great deal"
+      },
+      "anes_031": {
+        "code": "3",
+        "label": "Neither favor nor oppose"
+      },
+      "anes_032": {
+        "code": "1",
+        "label": "Favor a great deal"
+      },
+      "anes_033": {
+        "code": "1",
+        "label": "Favor a great deal"
+      },
+      "anes_034": {
+        "code": "1",
+        "label": "Favor a great deal"
+      },
+      "anes_035": {
+        "code": "1",
+        "label": "Favor a great deal"
+      },
+      "anes_036": {
+        "code": "1",
+        "label": "Favor a great deal"
+      },
+      "anes_037": {
+        "code": "2",
+        "label": "Favor somewhat"
+      },
+      "anes_038": {
+        "code": "4",
+        "label": "Oppose somewhat"
+      },
+      "anes_039": {
+        "code": "1",
+        "label": "Favor a great deal"
+      },
+      "anes_040": {
+        "code": "1",
+        "label": "Favor a great deal"
+      },
+      "anes_041": {
+        "code": "1",
+        "label": "Favor a great deal"
+      },
+      "anes_042": {
+        "code": "1",
+        "label": "Favor a great deal"
+      },
+      "anes_043": {
+        "code": "1",
+        "label": "Favor a great deal"
+      },
+      "anes_044": {
+        "code": "1",
+        "label": "Favor a great deal"
+      },
+      "anes_045": {
+        "code": "1",
+        "label": "Favor a great deal"
+      },
+      "anes_046": {
+        "code": "1",
+        "label": "Favor a great deal"
+      },
+      "anes_047": {
+        "code": "2",
+        "label": "Favor somewhat"
+      },
+      "anes_048": {
+        "code": "1",
+        "label": "Favor a great deal"
+      },
+      "anes_049": {
+        "code": "1",
+        "label": "Favor a great deal"
+      },
+      "anes_050": {
+        "code": "1",
+        "label": "Favor a great deal"
+      }
+    }
+  },
+  {
+    "variable": "V241212",
+    "label": "Government vs private health insurance",
+    "question_text": "There is much concern about the rapid rise in medical and hospital costs. Some feel there should be a government insurance plan which would cover all medical and hospital expenses. Others feel that medical expenses should be paid by individuals through private insurance plans. Which view is closer to yours?",
+    "response_options": {
+      "1": "Government plan",
+      "2": "Private insurance"
+    },
+    "domain": "health",
+    "expected_skill": "attitude_construction",
+    "ground_truth": {
+      "anes_001": {
+        "code": "1",
+        "label": "Government plan"
+      },
+      "anes_002": {
+        "code": "1",
+        "label": "Government plan"
+      },
+      "anes_003": {
+        "code": "1",
+        "label": "Government plan"
+      },
+      "anes_004": {
+        "code": "2",
+        "label": "Private insurance"
+      },
+      "anes_005": {
+        "code": "1",
+        "label": "Government plan"
+      },
+      "anes_006": {
+        "code": "2",
+        "label": "Private insurance"
+      },
+      "anes_007": {
+        "code": "1",
+        "label": "Government plan"
+      },
+      "anes_008": {
+        "code": "1",
+        "label": "Government plan"
+      },
+      "anes_009": {
+        "code": "1",
+        "label": "Government plan"
+      },
+      "anes_010": {
+        "code": "1",
+        "label": "Government plan"
+      },
+      "anes_011": {
+        "code": "1",
+        "label": "Government plan"
+      },
+      "anes_012": {
+        "code": "1",
+        "label": "Government plan"
+      },
+      "anes_013": {
+        "code": "1",
+        "label": "Government plan"
+      },
+      "anes_014": {
+        "code": "2",
+        "label": "Private insurance"
+      },
+      "anes_015": {
+        "code": "2",
+        "label": "Private insurance"
+      },
+      "anes_016": {
+        "code": "1",
+        "label": "Government plan"
+      },
+      "anes_017": {
+        "code": "1",
+        "label": "Government plan"
+      },
+      "anes_018": {
+        "code": "2",
+        "label": "Private insurance"
+      },
+      "anes_019": {
+        "code": "1",
+        "label": "Government plan"
+      },
+      "anes_020": {
+        "code": "1",
+        "label": "Government plan"
+      },
+      "anes_021": {
+        "code": "1",
+        "label": "Government plan"
+      },
+      "anes_022": {
+        "code": "1",
+        "label": "Government plan"
+      },
+      "anes_023": {
+        "code": "1",
+        "label": "Government plan"
+      },
+      "anes_024": {
+        "code": "1",
+        "label": "Government plan"
+      },
+      "anes_025": {
+        "code": "1",
+        "label": "Government plan"
+      },
+      "anes_026": {
+        "code": "2",
+        "label": "Private insurance"
+      },
+      "anes_027": {
+        "code": "2",
+        "label": "Private insurance"
+      },
+      "anes_028": {
+        "code": "1",
+        "label": "Government plan"
+      },
+      "anes_029": {
+        "code": "2",
+        "label": "Private insurance"
+      },
+      "anes_030": {
+        "code": "1",
+        "label": "Government plan"
+      },
+      "anes_031": {
+        "code": "1",
+        "label": "Government plan"
+      },
+      "anes_032": {
+        "code": "1",
+        "label": "Government plan"
+      },
+      "anes_033": {
+        "code": "2",
+        "label": "Private insurance"
+      },
+      "anes_034": {
+        "code": "1",
+        "label": "Government plan"
+      },
+      "anes_035": {
+        "code": "1",
+        "label": "Government plan"
+      },
+      "anes_036": {
+        "code": "1",
+        "label": "Government plan"
+      },
+      "anes_037": {
+        "code": "1",
+        "label": "Government plan"
+      },
+      "anes_038": {
+        "code": "1",
+        "label": "Government plan"
+      },
+      "anes_039": {
+        "code": "2",
+        "label": "Private insurance"
+      },
+      "anes_040": {
+        "code": "1",
+        "label": "Government plan"
+      },
+      "anes_041": {
+        "code": "2",
+        "label": "Private insurance"
+      },
+      "anes_042": {
+        "code": "1",
+        "label": "Government plan"
+      },
+      "anes_043": {
+        "code": "2",
+        "label": "Private insurance"
+      },
+      "anes_044": {
+        "code": "2",
+        "label": "Private insurance"
+      },
+      "anes_045": {
+        "code": "1",
+        "label": "Government plan"
+      },
+      "anes_046": {
+        "code": "2",
+        "label": "Private insurance"
+      },
+      "anes_047": {
+        "code": "1",
+        "label": "Government plan"
+      },
+      "anes_048": {
+        "code": "1",
+        "label": "Government plan"
+      },
+      "anes_049": {
+        "code": "2",
+        "label": "Private insurance"
+      },
+      "anes_050": {
+        "code": "1",
+        "label": "Government plan"
+      }
+    }
+  },
+  {
+    "variable": "V241177",
+    "label": "Immigration level preference",
+    "question_text": "Do you think the number of immigrants from foreign countries who are permitted to come to the United States to live should be increased a great deal, increased a moderate amount, increased a little, kept about the same as it is now, decreased a little, decreased a moderate amount, or decreased a great deal?",
+    "response_options": {
+      "1": "Increase a great deal",
+      "2": "Increase a moderate amount",
+      "3": "Increase a little",
+      "4": "Keep about the same",
+      "5": "Decrease a little",
+      "6": "Decrease a moderate amount",
+      "7": "Decrease a great deal"
+    },
+    "domain": "social_context",
+    "expected_skill": "attitude_construction",
+    "ground_truth": {
+      "anes_001": {
+        "code": "4",
+        "label": "Keep about the same"
+      },
+      "anes_003": {
+        "code": "2",
+        "label": "Increase a moderate amount"
+      },
+      "anes_005": {
+        "code": "4",
+        "label": "Keep about the same"
+      },
+      "anes_006": {
+        "code": "7",
+        "label": "Decrease a great deal"
+      },
+      "anes_007": {
+        "code": "6",
+        "label": "Decrease a moderate amount"
+      },
+      "anes_009": {
+        "code": "6",
+        "label": "Decrease a moderate amount"
+      },
+      "anes_010": {
+        "code": "4",
+        "label": "Keep about the same"
+      },
+      "anes_011": {
+        "code": "4",
+        "label": "Keep about the same"
+      },
+      "anes_013": {
+        "code": "6",
+        "label": "Decrease a moderate amount"
+      },
+      "anes_015": {
+        "code": "6",
+        "label": "Decrease a moderate amount"
+      },
+      "anes_016": {
+        "code": "5",
+        "label": "Decrease a little"
+      },
+      "anes_017": {
+        "code": "2",
+        "label": "Increase a moderate amount"
+      },
+      "anes_018": {
+        "code": "5",
+        "label": "Decrease a little"
+      },
+      "anes_019": {
+        "code": "4",
+        "label": "Keep about the same"
+      },
+      "anes_020": {
+        "code": "6",
+        "label": "Decrease a moderate amount"
+      },
+      "anes_021": {
+        "code": "2",
+        "label": "Increase a moderate amount"
+      },
+      "anes_022": {
+        "code": "6",
+        "label": "Decrease a moderate amount"
+      },
+      "anes_023": {
+        "code": "3",
+        "label": "Increase a little"
+      },
+      "anes_024": {
+        "code": "4",
+        "label": "Keep about the same"
+      },
+      "anes_025": {
+        "code": "5",
+        "label": "Decrease a little"
+      },
+      "anes_027": {
+        "code": "2",
+        "label": "Increase a moderate amount"
+      },
+      "anes_028": {
+        "code": "4",
+        "label": "Keep about the same"
+      },
+      "anes_029": {
+        "code": "3",
+        "label": "Increase a little"
+      },
+      "anes_030": {
+        "code": "6",
+        "label": "Decrease a moderate amount"
+      },
+      "anes_031": {
+        "code": "4",
+        "label": "Keep about the same"
+      },
+      "anes_032": {
+        "code": "6",
+        "label": "Decrease a moderate amount"
+      },
+      "anes_033": {
+        "code": "5",
+        "label": "Decrease a little"
+      },
+      "anes_034": {
+        "code": "2",
+        "label": "Increase a moderate amount"
+      },
+      "anes_035": {
+        "code": "1",
+        "label": "Increase a great deal"
+      },
+      "anes_036": {
+        "code": "4",
+        "label": "Keep about the same"
+      },
+      "anes_037": {
+        "code": "6",
+        "label": "Decrease a moderate amount"
+      },
+      "anes_039": {
+        "code": "5",
+        "label": "Decrease a little"
+      },
+      "anes_040": {
+        "code": "7",
+        "label": "Decrease a great deal"
+      },
+      "anes_041": {
+        "code": "7",
+        "label": "Decrease a great deal"
+      },
+      "anes_042": {
+        "code": "3",
+        "label": "Increase a little"
+      },
+      "anes_043": {
+        "code": "1",
+        "label": "Increase a great deal"
+      },
+      "anes_045": {
+        "code": "6",
+        "label": "Decrease a moderate amount"
+      },
+      "anes_046": {
+        "code": "6",
+        "label": "Decrease a moderate amount"
+      },
+      "anes_047": {
+        "code": "4",
+        "label": "Keep about the same"
+      },
+      "anes_048": {
+        "code": "5",
+        "label": "Decrease a little"
+      },
+      "anes_049": {
+        "code": "6",
+        "label": "Decrease a moderate amount"
+      },
+      "anes_050": {
+        "code": "6",
+        "label": "Decrease a moderate amount"
+      }
+    }
+  },
+  {
+    "variable": "V241236",
+    "label": "Racial resentment: slavery and discrimination legacy",
+    "question_text": "Do you agree strongly, agree somewhat, neither agree nor disagree, disagree somewhat, or disagree strongly with this statement: 'Generations of slavery and discrimination have created conditions that make it difficult for Blacks to work their way out of the lower class.'",
+    "response_options": {
+      "1": "Agree strongly",
+      "2": "Agree somewhat",
+      "3": "Neither agree nor disagree",
+      "4": "Disagree somewhat",
+      "5": "Disagree strongly"
+    },
+    "domain": "racial_attitudes",
+    "expected_skill": "attitude_construction",
+    "ground_truth": {
+      "anes_001": {
+        "code": "1",
+        "label": "Agree strongly"
+      },
+      "anes_002": {
+        "code": "1",
+        "label": "Agree strongly"
+      },
+      "anes_003": {
+        "code": "2",
+        "label": "Agree somewhat"
+      },
+      "anes_004": {
+        "code": "4",
+        "label": "Disagree somewhat"
+      },
+      "anes_005": {
+        "code": "5",
+        "label": "Disagree strongly"
+      },
+      "anes_006": {
+        "code": "5",
+        "label": "Disagree strongly"
+      },
+      "anes_007": {
+        "code": "3",
+        "label": "Neither agree nor disagree"
+      },
+      "anes_008": {
+        "code": "1",
+        "label": "Agree strongly"
+      },
+      "anes_009": {
+        "code": "5",
+        "label": "Disagree strongly"
+      },
+      "anes_010": {
+        "code": "3",
+        "label": "Neither agree nor disagree"
+      },
+      "anes_011": {
+        "code": "1",
+        "label": "Agree strongly"
+      },
+      "anes_012": {
+        "code": "3",
+        "label": "Neither agree nor disagree"
+      },
+      "anes_013": {
+        "code": "5",
+        "label": "Disagree strongly"
+      },
+      "anes_014": {
+        "code": "5",
+        "label": "Disagree strongly"
+      },
+      "anes_015": {
+        "code": "5",
+        "label": "Disagree strongly"
+      },
+      "anes_016": {
+        "code": "4",
+        "label": "Disagree somewhat"
+      },
+      "anes_017": {
+        "code": "3",
+        "label": "Neither agree nor disagree"
+      },
+      "anes_018": {
+        "code": "5",
+        "label": "Disagree strongly"
+      },
+      "anes_019": {
+        "code": "2",
+        "label": "Agree somewhat"
+      },
+      "anes_020": {
+        "code": "3",
+        "label": "Neither agree nor disagree"
+      },
+      "anes_021": {
+        "code": "2",
+        "label": "Agree somewhat"
+      },
+      "anes_022": {
+        "code": "3",
+        "label": "Neither agree nor disagree"
+      },
+      "anes_023": {
+        "code": "3",
+        "label": "Neither agree nor disagree"
+      },
+      "anes_024": {
+        "code": "2",
+        "label": "Agree somewhat"
+      },
+      "anes_025": {
+        "code": "5",
+        "label": "Disagree strongly"
+      },
+      "anes_026": {
+        "code": "4",
+        "label": "Disagree somewhat"
+      },
+      "anes_027": {
+        "code": "1",
+        "label": "Agree strongly"
+      },
+      "anes_028": {
+        "code": "4",
+        "label": "Disagree somewhat"
+      },
+      "anes_029": {
+        "code": "1",
+        "label": "Agree strongly"
+      },
+      "anes_030": {
+        "code": "5",
+        "label": "Disagree strongly"
+      },
+      "anes_031": {
+        "code": "2",
+        "label": "Agree somewhat"
+      },
+      "anes_032": {
+        "code": "5",
+        "label": "Disagree strongly"
+      },
+      "anes_033": {
+        "code": "5",
+        "label": "Disagree strongly"
+      },
+      "anes_034": {
+        "code": "2",
+        "label": "Agree somewhat"
+      },
+      "anes_035": {
+        "code": "2",
+        "label": "Agree somewhat"
+      },
+      "anes_036": {
+        "code": "4",
+        "label": "Disagree somewhat"
+      },
+      "anes_037": {
+        "code": "3",
+        "label": "Neither agree nor disagree"
+      },
+      "anes_038": {
+        "code": "4",
+        "label": "Disagree somewhat"
+      },
+      "anes_039": {
+        "code": "3",
+        "label": "Neither agree nor disagree"
+      },
+      "anes_040": {
+        "code": "5",
+        "label": "Disagree strongly"
+      },
+      "anes_041": {
+        "code": "5",
+        "label": "Disagree strongly"
+      },
+      "anes_042": {
+        "code": "2",
+        "label": "Agree somewhat"
+      },
+      "anes_043": {
+        "code": "1",
+        "label": "Agree strongly"
+      },
+      "anes_044": {
+        "code": "2",
+        "label": "Agree somewhat"
+      },
+      "anes_045": {
+        "code": "5",
+        "label": "Disagree strongly"
+      },
+      "anes_046": {
+        "code": "4",
+        "label": "Disagree somewhat"
+      },
+      "anes_047": {
+        "code": "4",
+        "label": "Disagree somewhat"
+      },
+      "anes_048": {
+        "code": "5",
+        "label": "Disagree strongly"
+      },
+      "anes_049": {
+        "code": "5",
+        "label": "Disagree strongly"
+      },
+      "anes_050": {
+        "code": "5",
+        "label": "Disagree strongly"
+      }
+    }
+  },
+  {
+    "variable": "V241238",
+    "label": "Racial resentment: Blacks should try harder",
+    "question_text": "Do you agree strongly, agree somewhat, neither agree nor disagree, disagree somewhat, or disagree strongly with this statement: 'If Blacks would only try harder, they could be just as well off as whites.'",
+    "response_options": {
+      "1": "Agree strongly",
+      "2": "Agree somewhat",
+      "3": "Neither agree nor disagree",
+      "4": "Disagree somewhat",
+      "5": "Disagree strongly"
+    },
+    "domain": "racial_attitudes",
+    "expected_skill": "direct_attitude",
+    "ground_truth": {
+      "anes_001": {
+        "code": "2",
+        "label": "Agree somewhat"
+      },
+      "anes_002": {
+        "code": "1",
+        "label": "Agree strongly"
+      },
+      "anes_003": {
+        "code": "1",
+        "label": "Agree strongly"
+      },
+      "anes_004": {
+        "code": "5",
+        "label": "Disagree strongly"
+      },
+      "anes_005": {
+        "code": "1",
+        "label": "Agree strongly"
+      },
+      "anes_006": {
+        "code": "5",
+        "label": "Disagree strongly"
+      },
+      "anes_007": {
+        "code": "3",
+        "label": "Neither agree nor disagree"
+      },
+      "anes_008": {
+        "code": "1",
+        "label": "Agree strongly"
+      },
+      "anes_009": {
+        "code": "4",
+        "label": "Disagree somewhat"
+      },
+      "anes_010": {
+        "code": "3",
+        "label": "Neither agree nor disagree"
+      },
+      "anes_011": {
+        "code": "1",
+        "label": "Agree strongly"
+      },
+      "anes_012": {
+        "code": "2",
+        "label": "Agree somewhat"
+      },
+      "anes_013": {
+        "code": "4",
+        "label": "Disagree somewhat"
+      },
+      "anes_014": {
+        "code": "5",
+        "label": "Disagree strongly"
+      },
+      "anes_015": {
+        "code": "5",
+        "label": "Disagree strongly"
+      },
+      "anes_016": {
+        "code": "3",
+        "label": "Neither agree nor disagree"
+      },
+      "anes_017": {
+        "code": "2",
+        "label": "Agree somewhat"
+      },
+      "anes_018": {
+        "code": "5",
+        "label": "Disagree strongly"
+      },
+      "anes_019": {
+        "code": "1",
+        "label": "Agree strongly"
+      },
+      "anes_020": {
+        "code": "2",
+        "label": "Agree somewhat"
+      },
+      "anes_021": {
+        "code": "2",
+        "label": "Agree somewhat"
+      },
+      "anes_022": {
+        "code": "3",
+        "label": "Neither agree nor disagree"
+      },
+      "anes_023": {
+        "code": "3",
+        "label": "Neither agree nor disagree"
+      },
+      "anes_024": {
+        "code": "3",
+        "label": "Neither agree nor disagree"
+      },
+      "anes_025": {
+        "code": "1",
+        "label": "Agree strongly"
+      },
+      "anes_026": {
+        "code": "3",
+        "label": "Neither agree nor disagree"
+      },
+      "anes_027": {
+        "code": "1",
+        "label": "Agree strongly"
+      },
+      "anes_028": {
+        "code": "2",
+        "label": "Agree somewhat"
+      },
+      "anes_029": {
+        "code": "1",
+        "label": "Agree strongly"
+      },
+      "anes_030": {
+        "code": "5",
+        "label": "Disagree strongly"
+      },
+      "anes_031": {
+        "code": "2",
+        "label": "Agree somewhat"
+      },
+      "anes_032": {
+        "code": "5",
+        "label": "Disagree strongly"
+      },
+      "anes_033": {
+        "code": "2",
+        "label": "Agree somewhat"
+      },
+      "anes_034": {
+        "code": "1",
+        "label": "Agree strongly"
+      },
+      "anes_035": {
+        "code": "1",
+        "label": "Agree strongly"
+      },
+      "anes_036": {
+        "code": "4",
+        "label": "Disagree somewhat"
+      },
+      "anes_037": {
+        "code": "4",
+        "label": "Disagree somewhat"
+      },
+      "anes_038": {
+        "code": "3",
+        "label": "Neither agree nor disagree"
+      },
+      "anes_039": {
+        "code": "2",
+        "label": "Agree somewhat"
+      },
+      "anes_040": {
+        "code": "5",
+        "label": "Disagree strongly"
+      },
+      "anes_041": {
+        "code": "5",
+        "label": "Disagree strongly"
+      },
+      "anes_042": {
+        "code": "1",
+        "label": "Agree strongly"
+      },
+      "anes_043": {
+        "code": "1",
+        "label": "Agree strongly"
+      },
+      "anes_044": {
+        "code": "2",
+        "label": "Agree somewhat"
+      },
+      "anes_045": {
+        "code": "4",
+        "label": "Disagree somewhat"
+      },
+      "anes_046": {
+        "code": "5",
+        "label": "Disagree strongly"
+      },
+      "anes_047": {
+        "code": "2",
+        "label": "Agree somewhat"
+      },
+      "anes_048": {
+        "code": "3",
+        "label": "Neither agree nor disagree"
+      },
+      "anes_049": {
+        "code": "5",
+        "label": "Disagree strongly"
+      },
+      "anes_050": {
+        "code": "3",
+        "label": "Neither agree nor disagree"
+      }
+    }
+  },
+  {
+    "variable": "V241240",
+    "label": "Government aid to Blacks",
+    "question_text": "Some people feel that the government in Washington should make every effort to improve the social and economic position of Blacks. Others feel that the government should not make any special effort to help Blacks because they should help themselves. Where would you place yourself on this scale? 1 means the government should help Blacks, 7 means Blacks should help themselves.",
+    "response_options": {
+      "1": "Government should help blacks",
+      "2": "2",
+      "3": "3",
+      "4": "4",
+      "5": "5",
+      "6": "6",
+      "7": "Blacks should help themselves"
+    },
+    "domain": "racial_attitudes",
+    "expected_skill": "attitude_construction",
+    "ground_truth": {
+      "anes_001": {
+        "code": "5",
+        "label": "5"
+      },
+      "anes_002": {
+        "code": "7",
+        "label": "Blacks should help themselves"
+      },
+      "anes_003": {
+        "code": "5",
+        "label": "5"
+      },
+      "anes_004": {
+        "code": "7",
+        "label": "Blacks should help themselves"
+      },
+      "anes_005": {
+        "code": "6",
+        "label": "6"
+      },
+      "anes_006": {
+        "code": "4",
+        "label": "4"
+      },
+      "anes_007": {
+        "code": "7",
+        "label": "Blacks should help themselves"
+      },
+      "anes_008": {
+        "code": "7",
+        "label": "Blacks should help themselves"
+      },
+      "anes_009": {
+        "code": "7",
+        "label": "Blacks should help themselves"
+      },
+      "anes_010": {
+        "code": "6",
+        "label": "6"
+      },
+      "anes_011": {
+        "code": "5",
+        "label": "5"
+      },
+      "anes_012": {
+        "code": "5",
+        "label": "5"
+      },
+      "anes_013": {
+        "code": "7",
+        "label": "Blacks should help themselves"
+      },
+      "anes_014": {
+        "code": "1",
+        "label": "Government should help blacks"
+      },
+      "anes_015": {
+        "code": "1",
+        "label": "Government should help blacks"
+      },
+      "anes_016": {
+        "code": "6",
+        "label": "6"
+      },
+      "anes_017": {
+        "code": "5",
+        "label": "5"
+      },
+      "anes_018": {
+        "code": "1",
+        "label": "Government should help blacks"
+      },
+      "anes_019": {
+        "code": "7",
+        "label": "Blacks should help themselves"
+      },
+      "anes_020": {
+        "code": "3",
+        "label": "3"
+      },
+      "anes_021": {
+        "code": "5",
+        "label": "5"
+      },
+      "anes_022": {
+        "code": "4",
+        "label": "4"
+      },
+      "anes_023": {
+        "code": "4",
+        "label": "4"
+      },
+      "anes_024": {
+        "code": "6",
+        "label": "6"
+      },
+      "anes_025": {
+        "code": "7",
+        "label": "Blacks should help themselves"
+      },
+      "anes_026": {
+        "code": "7",
+        "label": "Blacks should help themselves"
+      },
+      "anes_027": {
+        "code": "5",
+        "label": "5"
+      },
+      "anes_028": {
+        "code": "5",
+        "label": "5"
+      },
+      "anes_029": {
+        "code": "5",
+        "label": "5"
+      },
+      "anes_030": {
+        "code": "6",
+        "label": "6"
+      },
+      "anes_031": {
+        "code": "4",
+        "label": "4"
+      },
+      "anes_032": {
+        "code": "7",
+        "label": "Blacks should help themselves"
+      },
+      "anes_033": {
+        "code": "6",
+        "label": "6"
+      },
+      "anes_034": {
+        "code": "5",
+        "label": "5"
+      },
+      "anes_035": {
+        "code": "7",
+        "label": "Blacks should help themselves"
+      },
+      "anes_036": {
+        "code": "4",
+        "label": "4"
+      },
+      "anes_037": {
+        "code": "5",
+        "label": "5"
+      },
+      "anes_038": {
+        "code": "5",
+        "label": "5"
+      },
+      "anes_039": {
+        "code": "6",
+        "label": "6"
+      },
+      "anes_040": {
+        "code": "4",
+        "label": "4"
+      },
+      "anes_041": {
+        "code": "7",
+        "label": "Blacks should help themselves"
+      },
+      "anes_042": {
+        "code": "5",
+        "label": "5"
+      },
+      "anes_043": {
+        "code": "5",
+        "label": "5"
+      },
+      "anes_044": {
+        "code": "7",
+        "label": "Blacks should help themselves"
+      },
+      "anes_045": {
+        "code": "1",
+        "label": "Government should help blacks"
+      },
+      "anes_046": {
+        "code": "7",
+        "label": "Blacks should help themselves"
+      },
+      "anes_047": {
+        "code": "5",
+        "label": "5"
+      },
+      "anes_048": {
+        "code": "7",
+        "label": "Blacks should help themselves"
+      },
+      "anes_049": {
+        "code": "7",
+        "label": "Blacks should help themselves"
+      },
+      "anes_050": {
+        "code": "7",
+        "label": "Blacks should help themselves"
+      }
+    }
+  },
+  {
+    "variable": "V241243",
+    "label": "Amount of discrimination against Blacks",
+    "question_text": "How much discrimination is there in the United States today against each of the following groups? Blacks. Would you say a great deal, a lot, a moderate amount, a little, or none at all?",
+    "response_options": {
+      "1": "A great deal",
+      "2": "A lot",
+      "3": "A moderate amount",
+      "4": "A little",
+      "5": "None at all"
+    },
+    "domain": "racial_attitudes",
+    "expected_skill": "direct_attitude",
+    "ground_truth": {
+      "anes_001": {
+        "code": "4",
+        "label": "A little"
+      },
+      "anes_003": {
+        "code": "4",
+        "label": "A little"
+      },
+      "anes_005": {
+        "code": "3",
+        "label": "A moderate amount"
+      },
+      "anes_006": {
+        "code": "4",
+        "label": "A little"
+      },
+      "anes_007": {
+        "code": "1",
+        "label": "A great deal"
+      },
+      "anes_009": {
+        "code": "1",
+        "label": "A great deal"
+      },
+      "anes_010": {
+        "code": "5",
+        "label": "None at all"
+      },
+      "anes_011": {
+        "code": "4",
+        "label": "A little"
+      },
+      "anes_012": {
+        "code": "5",
+        "label": "None at all"
+      },
+      "anes_013": {
+        "code": "2",
+        "label": "A lot"
+      },
+      "anes_014": {
+        "code": "4",
+        "label": "A little"
+      },
+      "anes_015": {
+        "code": "1",
+        "label": "A great deal"
+      },
+      "anes_016": {
+        "code": "5",
+        "label": "None at all"
+      },
+      "anes_017": {
+        "code": "3",
+        "label": "A moderate amount"
+      },
+      "anes_018": {
+        "code": "1",
+        "label": "A great deal"
+      },
+      "anes_019": {
+        "code": "4",
+        "label": "A little"
+      },
+      "anes_020": {
+        "code": "3",
+        "label": "A moderate amount"
+      },
+      "anes_021": {
+        "code": "3",
+        "label": "A moderate amount"
+      },
+      "anes_022": {
+        "code": "4",
+        "label": "A little"
+      },
+      "anes_023": {
+        "code": "4",
+        "label": "A little"
+      },
+      "anes_025": {
+        "code": "4",
+        "label": "A little"
+      },
+      "anes_027": {
+        "code": "4",
+        "label": "A little"
+      },
+      "anes_028": {
+        "code": "5",
+        "label": "None at all"
+      },
+      "anes_029": {
+        "code": "4",
+        "label": "A little"
+      },
+      "anes_030": {
+        "code": "4",
+        "label": "A little"
+      },
+      "anes_031": {
+        "code": "4",
+        "label": "A little"
+      },
+      "anes_032": {
+        "code": "1",
+        "label": "A great deal"
+      },
+      "anes_033": {
+        "code": "3",
+        "label": "A moderate amount"
+      },
+      "anes_034": {
+        "code": "5",
+        "label": "None at all"
+      },
+      "anes_035": {
+        "code": "4",
+        "label": "A little"
+      },
+      "anes_036": {
+        "code": "3",
+        "label": "A moderate amount"
+      },
+      "anes_037": {
+        "code": "3",
+        "label": "A moderate amount"
+      },
+      "anes_038": {
+        "code": "2",
+        "label": "A lot"
+      },
+      "anes_040": {
+        "code": "4",
+        "label": "A little"
+      },
+      "anes_042": {
+        "code": "4",
+        "label": "A little"
+      },
+      "anes_043": {
+        "code": "4",
+        "label": "A little"
+      },
+      "anes_045": {
+        "code": "1",
+        "label": "A great deal"
+      },
+      "anes_046": {
+        "code": "1",
+        "label": "A great deal"
+      },
+      "anes_047": {
+        "code": "5",
+        "label": "None at all"
+      },
+      "anes_048": {
+        "code": "2",
+        "label": "A lot"
+      },
+      "anes_049": {
+        "code": "1",
+        "label": "A great deal"
+      },
+      "anes_050": {
+        "code": "1",
+        "label": "A great deal"
+      }
+    }
+  },
+  {
+    "variable": "V241244",
+    "label": "Newer lifestyles contributing to breakdown",
+    "question_text": "Please tell me how much you agree or disagree: 'The newer lifestyles are contributing to the breakdown of our society.' Use a 7-point scale where 1 means you agree strongly and 7 means you disagree strongly.",
+    "response_options": {
+      "1": "Agree strongly that newer lifestyles are contributing to breakdown",
+      "2": "2",
+      "3": "3",
+      "4": "4",
+      "5": "5",
+      "6": "6",
+      "7": "Disagree strongly"
+    },
+    "domain": "values_personality",
+    "expected_skill": "direct_attitude",
+    "ground_truth": {
+      "anes_001": {
+        "code": "4",
+        "label": "4"
+      },
+      "anes_002": {
+        "code": "2",
+        "label": "2"
+      },
+      "anes_003": {
+        "code": "6",
+        "label": "6"
+      },
+      "anes_004": {
+        "code": "7",
+        "label": "Disagree strongly"
+      },
+      "anes_005": {
+        "code": "6",
+        "label": "6"
+      },
+      "anes_006": {
+        "code": "4",
+        "label": "4"
+      },
+      "anes_007": {
+        "code": "7",
+        "label": "Disagree strongly"
+      },
+      "anes_008": {
+        "code": "7",
+        "label": "Disagree strongly"
+      },
+      "anes_009": {
+        "code": "6",
+        "label": "6"
+      },
+      "anes_010": {
+        "code": "1",
+        "label": "Agree strongly that newer lifestyles are contributing to breakdown"
+      },
+      "anes_011": {
+        "code": "6",
+        "label": "6"
+      },
+      "anes_012": {
+        "code": "2",
+        "label": "2"
+      },
+      "anes_013": {
+        "code": "7",
+        "label": "Disagree strongly"
+      },
+      "anes_014": {
+        "code": "4",
+        "label": "4"
+      },
+      "anes_015": {
+        "code": "5",
+        "label": "5"
+      },
+      "anes_016": {
+        "code": "6",
+        "label": "6"
+      },
+      "anes_017": {
+        "code": "4",
+        "label": "4"
+      },
+      "anes_018": {
+        "code": "6",
+        "label": "6"
+      },
+      "anes_019": {
+        "code": "4",
+        "label": "4"
+      },
+      "anes_020": {
+        "code": "4",
+        "label": "4"
+      },
+      "anes_021": {
+        "code": "6",
+        "label": "6"
+      },
+      "anes_022": {
+        "code": "5",
+        "label": "5"
+      },
+      "anes_023": {
+        "code": "7",
+        "label": "Disagree strongly"
+      },
+      "anes_024": {
+        "code": "2",
+        "label": "2"
+      },
+      "anes_025": {
+        "code": "6",
+        "label": "6"
+      },
+      "anes_026": {
+        "code": "1",
+        "label": "Agree strongly that newer lifestyles are contributing to breakdown"
+      },
+      "anes_027": {
+        "code": "3",
+        "label": "3"
+      },
+      "anes_028": {
+        "code": "5",
+        "label": "5"
+      },
+      "anes_029": {
+        "code": "7",
+        "label": "Disagree strongly"
+      },
+      "anes_030": {
+        "code": "5",
+        "label": "5"
+      },
+      "anes_031": {
+        "code": "4",
+        "label": "4"
+      },
+      "anes_032": {
+        "code": "7",
+        "label": "Disagree strongly"
+      },
+      "anes_033": {
+        "code": "5",
+        "label": "5"
+      },
+      "anes_034": {
+        "code": "2",
+        "label": "2"
+      },
+      "anes_035": {
+        "code": "7",
+        "label": "Disagree strongly"
+      },
+      "anes_036": {
+        "code": "7",
+        "label": "Disagree strongly"
+      },
+      "anes_037": {
+        "code": "3",
+        "label": "3"
+      },
+      "anes_038": {
+        "code": "6",
+        "label": "6"
+      },
+      "anes_039": {
+        "code": "1",
+        "label": "Agree strongly that newer lifestyles are contributing to breakdown"
+      },
+      "anes_040": {
+        "code": "4",
+        "label": "4"
+      },
+      "anes_041": {
+        "code": "1",
+        "label": "Agree strongly that newer lifestyles are contributing to breakdown"
+      },
+      "anes_042": {
+        "code": "4",
+        "label": "4"
+      },
+      "anes_043": {
+        "code": "4",
+        "label": "4"
+      },
+      "anes_044": {
+        "code": "7",
+        "label": "Disagree strongly"
+      },
+      "anes_045": {
+        "code": "7",
+        "label": "Disagree strongly"
+      },
+      "anes_046": {
+        "code": "5",
+        "label": "5"
+      },
+      "anes_047": {
+        "code": "3",
+        "label": "3"
+      },
+      "anes_048": {
+        "code": "6",
+        "label": "6"
+      },
+      "anes_049": {
+        "code": "5",
+        "label": "5"
+      },
+      "anes_050": {
+        "code": "5",
+        "label": "5"
+      }
+    }
+  },
+  {
+    "variable": "V241246",
+    "label": "Emphasis on traditional family ties",
+    "question_text": "Please tell me how much you agree or disagree: 'This country would have many fewer problems if there were more emphasis on traditional family ties.' Use a 7-point scale where 1 means you agree strongly and 7 means you disagree strongly.",
+    "response_options": {
+      "1": "Agree strongly that more emphasis on traditional family ties needed",
+      "2": "2",
+      "3": "3",
+      "4": "4",
+      "5": "5",
+      "6": "6",
+      "7": "Disagree strongly"
+    },
+    "domain": "values_personality",
+    "expected_skill": "direct_attitude",
+    "ground_truth": {
+      "anes_001": {
+        "code": "2",
+        "label": "2"
+      },
+      "anes_002": {
+        "code": "7",
+        "label": "Disagree strongly"
+      },
+      "anes_003": {
+        "code": "1",
+        "label": "Agree strongly that more emphasis on traditional family ties needed"
+      },
+      "anes_004": {
+        "code": "7",
+        "label": "Disagree strongly"
+      },
+      "anes_005": {
+        "code": "1",
+        "label": "Agree strongly that more emphasis on traditional family ties needed"
+      },
+      "anes_006": {
+        "code": "4",
+        "label": "4"
+      },
+      "anes_007": {
+        "code": "1",
+        "label": "Agree strongly that more emphasis on traditional family ties needed"
+      },
+      "anes_008": {
+        "code": "1",
+        "label": "Agree strongly that more emphasis on traditional family ties needed"
+      },
+      "anes_009": {
+        "code": "1",
+        "label": "Agree strongly that more emphasis on traditional family ties needed"
+      },
+      "anes_010": {
+        "code": "6",
+        "label": "6"
+      },
+      "anes_011": {
+        "code": "2",
+        "label": "2"
+      },
+      "anes_012": {
+        "code": "5",
+        "label": "5"
+      },
+      "anes_013": {
+        "code": "1",
+        "label": "Agree strongly that more emphasis on traditional family ties needed"
+      },
+      "anes_014": {
+        "code": "4",
+        "label": "4"
+      },
+      "anes_015": {
+        "code": "1",
+        "label": "Agree strongly that more emphasis on traditional family ties needed"
+      },
+      "anes_016": {
+        "code": "1",
+        "label": "Agree strongly that more emphasis on traditional family ties needed"
+      },
+      "anes_017": {
+        "code": "3",
+        "label": "3"
+      },
+      "anes_018": {
+        "code": "1",
+        "label": "Agree strongly that more emphasis on traditional family ties needed"
+      },
+      "anes_019": {
+        "code": "1",
+        "label": "Agree strongly that more emphasis on traditional family ties needed"
+      },
+      "anes_020": {
+        "code": "5",
+        "label": "5"
+      },
+      "anes_021": {
+        "code": "2",
+        "label": "2"
+      },
+      "anes_022": {
+        "code": "5",
+        "label": "5"
+      },
+      "anes_023": {
+        "code": "4",
+        "label": "4"
+      },
+      "anes_024": {
+        "code": "5",
+        "label": "5"
+      },
+      "anes_025": {
+        "code": "1",
+        "label": "Agree strongly that more emphasis on traditional family ties needed"
+      },
+      "anes_026": {
+        "code": "1",
+        "label": "Agree strongly that more emphasis on traditional family ties needed"
+      },
+      "anes_027": {
+        "code": "3",
+        "label": "3"
+      },
+      "anes_028": {
+        "code": "3",
+        "label": "3"
+      },
+      "anes_029": {
+        "code": "1",
+        "label": "Agree strongly that more emphasis on traditional family ties needed"
+      },
+      "anes_030": {
+        "code": "3",
+        "label": "3"
+      },
+      "anes_031": {
+        "code": "4",
+        "label": "4"
+      },
+      "anes_032": {
+        "code": "1",
+        "label": "Agree strongly that more emphasis on traditional family ties needed"
+      },
+      "anes_033": {
+        "code": "7",
+        "label": "Disagree strongly"
+      },
+      "anes_034": {
+        "code": "3",
+        "label": "3"
+      },
+      "anes_035": {
+        "code": "3",
+        "label": "3"
+      },
+      "anes_036": {
+        "code": "3",
+        "label": "3"
+      },
+      "anes_037": {
+        "code": "3",
+        "label": "3"
+      },
+      "anes_038": {
+        "code": "3",
+        "label": "3"
+      },
+      "anes_039": {
+        "code": "7",
+        "label": "Disagree strongly"
+      },
+      "anes_040": {
+        "code": "1",
+        "label": "Agree strongly that more emphasis on traditional family ties needed"
+      },
+      "anes_041": {
+        "code": "1",
+        "label": "Agree strongly that more emphasis on traditional family ties needed"
+      },
+      "anes_042": {
+        "code": "5",
+        "label": "5"
+      },
+      "anes_043": {
+        "code": "3",
+        "label": "3"
+      },
+      "anes_044": {
+        "code": "7",
+        "label": "Disagree strongly"
+      },
+      "anes_045": {
+        "code": "4",
+        "label": "4"
+      },
+      "anes_046": {
+        "code": "1",
+        "label": "Agree strongly that more emphasis on traditional family ties needed"
+      },
+      "anes_047": {
+        "code": "1",
+        "label": "Agree strongly that more emphasis on traditional family ties needed"
+      },
+      "anes_048": {
+        "code": "1",
+        "label": "Agree strongly that more emphasis on traditional family ties needed"
+      },
+      "anes_049": {
+        "code": "1",
+        "label": "Agree strongly that more emphasis on traditional family ties needed"
+      },
+      "anes_050": {
+        "code": "1",
+        "label": "Agree strongly that more emphasis on traditional family ties needed"
+      }
+    }
+  },
+  {
+    "variable": "V241247",
+    "label": "Same-sex marriage",
+    "question_text": "Which comes closest to your view on same-sex couples? Use a 7-point scale where 1 means there should be no legal recognition, 4 means civil unions but not marriage, and 7 means same-sex couples should be allowed to marry.",
+    "response_options": {
+      "1": "No legal recognition",
+      "2": "2",
+      "3": "3",
+      "4": "Civil unions",
+      "5": "5",
+      "6": "6",
+      "7": "Marriage"
+    },
+    "domain": "social_context",
+    "expected_skill": "direct_attitude",
+    "ground_truth": {
+      "anes_001": {
+        "code": "4",
+        "label": "Civil unions"
+      },
+      "anes_002": {
+        "code": "1",
+        "label": "No legal recognition"
+      },
+      "anes_003": {
+        "code": "7",
+        "label": "Marriage"
+      },
+      "anes_004": {
+        "code": "1",
+        "label": "No legal recognition"
+      },
+      "anes_005": {
+        "code": "5",
+        "label": "5"
+      },
+      "anes_006": {
+        "code": "4",
+        "label": "Civil unions"
+      },
+      "anes_007": {
+        "code": "7",
+        "label": "Marriage"
+      },
+      "anes_008": {
+        "code": "7",
+        "label": "Marriage"
+      },
+      "anes_009": {
+        "code": "6",
+        "label": "6"
+      },
+      "anes_010": {
+        "code": "7",
+        "label": "Marriage"
+      },
+      "anes_011": {
+        "code": "7",
+        "label": "Marriage"
+      },
+      "anes_012": {
+        "code": "2",
+        "label": "2"
+      },
+      "anes_013": {
+        "code": "6",
+        "label": "6"
+      },
+      "anes_014": {
+        "code": "4",
+        "label": "Civil unions"
+      },
+      "anes_015": {
+        "code": "6",
+        "label": "6"
+      },
+      "anes_016": {
+        "code": "6",
+        "label": "6"
+      },
+      "anes_017": {
+        "code": "6",
+        "label": "6"
+      },
+      "anes_018": {
+        "code": "6",
+        "label": "6"
+      },
+      "anes_019": {
+        "code": "7",
+        "label": "Marriage"
+      },
+      "anes_020": {
+        "code": "5",
+        "label": "5"
+      },
+      "anes_021": {
+        "code": "7",
+        "label": "Marriage"
+      },
+      "anes_022": {
+        "code": "5",
+        "label": "5"
+      },
+      "anes_023": {
+        "code": "7",
+        "label": "Marriage"
+      },
+      "anes_024": {
+        "code": "1",
+        "label": "No legal recognition"
+      },
+      "anes_025": {
+        "code": "7",
+        "label": "Marriage"
+      },
+      "anes_026": {
+        "code": "3",
+        "label": "3"
+      },
+      "anes_027": {
+        "code": "7",
+        "label": "Marriage"
+      },
+      "anes_028": {
+        "code": "5",
+        "label": "5"
+      },
+      "anes_029": {
+        "code": "7",
+        "label": "Marriage"
+      },
+      "anes_030": {
+        "code": "5",
+        "label": "5"
+      },
+      "anes_031": {
+        "code": "4",
+        "label": "Civil unions"
+      },
+      "anes_032": {
+        "code": "7",
+        "label": "Marriage"
+      },
+      "anes_033": {
+        "code": "4",
+        "label": "Civil unions"
+      },
+      "anes_034": {
+        "code": "6",
+        "label": "6"
+      },
+      "anes_035": {
+        "code": "7",
+        "label": "Marriage"
+      },
+      "anes_036": {
+        "code": "5",
+        "label": "5"
+      },
+      "anes_037": {
+        "code": "6",
+        "label": "6"
+      },
+      "anes_038": {
+        "code": "6",
+        "label": "6"
+      },
+      "anes_039": {
+        "code": "2",
+        "label": "2"
+      },
+      "anes_040": {
+        "code": "7",
+        "label": "Marriage"
+      },
+      "anes_041": {
+        "code": "7",
+        "label": "Marriage"
+      },
+      "anes_042": {
+        "code": "3",
+        "label": "3"
+      },
+      "anes_043": {
+        "code": "7",
+        "label": "Marriage"
+      },
+      "anes_044": {
+        "code": "7",
+        "label": "Marriage"
+      },
+      "anes_045": {
+        "code": "4",
+        "label": "Civil unions"
+      },
+      "anes_046": {
+        "code": "5",
+        "label": "5"
+      },
+      "anes_047": {
+        "code": "7",
+        "label": "Marriage"
+      },
+      "anes_048": {
+        "code": "6",
+        "label": "6"
+      },
+      "anes_049": {
+        "code": "6",
+        "label": "6"
+      },
+      "anes_050": {
+        "code": "5",
+        "label": "5"
+      }
+    }
+  },
+  {
+    "variable": "V241252",
+    "label": "Death penalty",
+    "question_text": "Do you favor or oppose the death penalty for persons convicted of murder? Use a 7-point scale where 1 means you favor strongly and 7 means you oppose strongly.",
+    "response_options": {
+      "1": "Favor strongly",
+      "2": "2",
+      "3": "3",
+      "4": "4",
+      "5": "5",
+      "6": "6",
+      "7": "Oppose strongly"
+    },
+    "domain": "social_context",
+    "expected_skill": "direct_attitude",
+    "ground_truth": {
+      "anes_001": {
+        "code": "1",
+        "label": "Favor strongly"
+      },
+      "anes_002": {
+        "code": "2",
+        "label": "2"
+      },
+      "anes_003": {
+        "code": "4",
+        "label": "4"
+      },
+      "anes_004": {
+        "code": "1",
+        "label": "Favor strongly"
+      },
+      "anes_005": {
+        "code": "4",
+        "label": "4"
+      },
+      "anes_007": {
+        "code": "7",
+        "label": "Oppose strongly"
+      },
+      "anes_008": {
+        "code": "4",
+        "label": "4"
+      },
+      "anes_009": {
+        "code": "6",
+        "label": "6"
+      },
+      "anes_010": {
+        "code": "2",
+        "label": "2"
+      },
+      "anes_011": {
+        "code": "4",
+        "label": "4"
+      },
+      "anes_012": {
+        "code": "7",
+        "label": "Oppose strongly"
+      },
+      "anes_013": {
+        "code": "6",
+        "label": "6"
+      },
+      "anes_014": {
+        "code": "1",
+        "label": "Favor strongly"
+      },
+      "anes_015": {
+        "code": "1",
+        "label": "Favor strongly"
+      },
+      "anes_016": {
+        "code": "5",
+        "label": "5"
+      },
+      "anes_017": {
+        "code": "5",
+        "label": "5"
+      },
+      "anes_018": {
+        "code": "4",
+        "label": "4"
+      },
+      "anes_019": {
+        "code": "3",
+        "label": "3"
+      },
+      "anes_020": {
+        "code": "3",
+        "label": "3"
+      },
+      "anes_021": {
+        "code": "2",
+        "label": "2"
+      },
+      "anes_022": {
+        "code": "1",
+        "label": "Favor strongly"
+      },
+      "anes_023": {
+        "code": "3",
+        "label": "3"
+      },
+      "anes_024": {
+        "code": "7",
+        "label": "Oppose strongly"
+      },
+      "anes_025": {
+        "code": "7",
+        "label": "Oppose strongly"
+      },
+      "anes_026": {
+        "code": "1",
+        "label": "Favor strongly"
+      },
+      "anes_027": {
+        "code": "2",
+        "label": "2"
+      },
+      "anes_028": {
+        "code": "4",
+        "label": "4"
+      },
+      "anes_029": {
+        "code": "3",
+        "label": "3"
+      },
+      "anes_030": {
+        "code": "7",
+        "label": "Oppose strongly"
+      },
+      "anes_032": {
+        "code": "7",
+        "label": "Oppose strongly"
+      },
+      "anes_034": {
+        "code": "3",
+        "label": "3"
+      },
+      "anes_035": {
+        "code": "4",
+        "label": "4"
+      },
+      "anes_036": {
+        "code": "2",
+        "label": "2"
+      },
+      "anes_038": {
+        "code": "3",
+        "label": "3"
+      },
+      "anes_039": {
+        "code": "7",
+        "label": "Oppose strongly"
+      },
+      "anes_041": {
+        "code": "7",
+        "label": "Oppose strongly"
+      },
+      "anes_042": {
+        "code": "1",
+        "label": "Favor strongly"
+      },
+      "anes_043": {
+        "code": "2",
+        "label": "2"
+      },
+      "anes_044": {
+        "code": "1",
+        "label": "Favor strongly"
+      },
+      "anes_046": {
+        "code": "6",
+        "label": "6"
+      },
+      "anes_047": {
+        "code": "7",
+        "label": "Oppose strongly"
+      },
+      "anes_048": {
+        "code": "5",
+        "label": "5"
+      },
+      "anes_049": {
+        "code": "7",
+        "label": "Oppose strongly"
+      },
+      "anes_050": {
+        "code": "5",
+        "label": "5"
+      }
+    }
+  },
+  {
+    "variable": "V241254",
+    "label": "Gun access",
+    "question_text": "Do you think the federal government should make it more difficult for people to buy a gun, easier, or keep the rules about the same? Use a 7-point scale where 1 means a lot easier, 4 means kept about the same, and 7 means a lot more difficult.",
+    "response_options": {
+      "1": "A lot easier",
+      "2": "2",
+      "3": "3",
+      "4": "Kept about the same",
+      "5": "5",
+      "6": "6",
+      "7": "A lot more difficult"
+    },
+    "domain": "social_context",
+    "expected_skill": "direct_attitude",
+    "ground_truth": {
+      "anes_001": {
+        "code": "5",
+        "label": "5"
+      },
+      "anes_002": {
+        "code": "6",
+        "label": "6"
+      },
+      "anes_003": {
+        "code": "5",
+        "label": "5"
+      },
+      "anes_004": {
+        "code": "1",
+        "label": "A lot easier"
+      },
+      "anes_005": {
+        "code": "4",
+        "label": "Kept about the same"
+      },
+      "anes_006": {
+        "code": "4",
+        "label": "Kept about the same"
+      },
+      "anes_007": {
+        "code": "7",
+        "label": "A lot more difficult"
+      },
+      "anes_008": {
+        "code": "7",
+        "label": "A lot more difficult"
+      },
+      "anes_009": {
+        "code": "6",
+        "label": "6"
+      },
+      "anes_010": {
+        "code": "7",
+        "label": "A lot more difficult"
+      },
+      "anes_011": {
+        "code": "6",
+        "label": "6"
+      },
+      "anes_012": {
+        "code": "4",
+        "label": "Kept about the same"
+      },
+      "anes_013": {
+        "code": "6",
+        "label": "6"
+      },
+      "anes_014": {
+        "code": "2",
+        "label": "2"
+      },
+      "anes_015": {
+        "code": "5",
+        "label": "5"
+      },
+      "anes_016": {
+        "code": "6",
+        "label": "6"
+      },
+      "anes_017": {
+        "code": "6",
+        "label": "6"
+      },
+      "anes_018": {
+        "code": "6",
+        "label": "6"
+      },
+      "anes_019": {
+        "code": "7",
+        "label": "A lot more difficult"
+      },
+      "anes_020": {
+        "code": "4",
+        "label": "Kept about the same"
+      },
+      "anes_021": {
+        "code": "6",
+        "label": "6"
+      },
+      "anes_022": {
+        "code": "7",
+        "label": "A lot more difficult"
+      },
+      "anes_023": {
+        "code": "7",
+        "label": "A lot more difficult"
+      },
+      "anes_024": {
+        "code": "2",
+        "label": "2"
+      },
+      "anes_025": {
+        "code": "7",
+        "label": "A lot more difficult"
+      },
+      "anes_026": {
+        "code": "3",
+        "label": "3"
+      },
+      "anes_027": {
+        "code": "7",
+        "label": "A lot more difficult"
+      },
+      "anes_028": {
+        "code": "6",
+        "label": "6"
+      },
+      "anes_029": {
+        "code": "7",
+        "label": "A lot more difficult"
+      },
+      "anes_030": {
+        "code": "7",
+        "label": "A lot more difficult"
+      },
+      "anes_031": {
+        "code": "4",
+        "label": "Kept about the same"
+      },
+      "anes_032": {
+        "code": "7",
+        "label": "A lot more difficult"
+      },
+      "anes_033": {
+        "code": "4",
+        "label": "Kept about the same"
+      },
+      "anes_034": {
+        "code": "7",
+        "label": "A lot more difficult"
+      },
+      "anes_035": {
+        "code": "7",
+        "label": "A lot more difficult"
+      },
+      "anes_036": {
+        "code": "5",
+        "label": "5"
+      },
+      "anes_037": {
+        "code": "2",
+        "label": "2"
+      },
+      "anes_038": {
+        "code": "5",
+        "label": "5"
+      },
+      "anes_039": {
+        "code": "4",
+        "label": "Kept about the same"
+      },
+      "anes_040": {
+        "code": "7",
+        "label": "A lot more difficult"
+      },
+      "anes_041": {
+        "code": "7",
+        "label": "A lot more difficult"
+      },
+      "anes_042": {
+        "code": "7",
+        "label": "A lot more difficult"
+      },
+      "anes_043": {
+        "code": "7",
+        "label": "A lot more difficult"
+      },
+      "anes_044": {
+        "code": "7",
+        "label": "A lot more difficult"
+      },
+      "anes_045": {
+        "code": "4",
+        "label": "Kept about the same"
+      },
+      "anes_046": {
+        "code": "6",
+        "label": "6"
+      },
+      "anes_047": {
+        "code": "7",
+        "label": "A lot more difficult"
+      },
+      "anes_048": {
+        "code": "6",
+        "label": "6"
+      },
+      "anes_049": {
+        "code": "7",
+        "label": "A lot more difficult"
+      },
+      "anes_050": {
+        "code": "7",
+        "label": "A lot more difficult"
+      }
+    }
+  },
+  {
+    "variable": "V241258",
+    "label": "Abortion policy",
+    "question_text": "Which one of the opinions on this page best agrees with your view about abortion? Use a 7-point scale where 1 means by law abortion should never be permitted and 7 means by law a woman should always be able to obtain an abortion as a matter of personal choice.",
+    "response_options": {
+      "1": "Never permit",
+      "2": "2",
+      "3": "3",
+      "4": "4",
+      "5": "5",
+      "6": "6",
+      "7": "Always allow by law"
+    },
+    "domain": "social_context",
+    "expected_skill": "attitude_construction",
+    "ground_truth": {
+      "anes_003": {
+        "code": "2",
+        "label": "2"
+      },
+      "anes_004": {
+        "code": "6",
+        "label": "6"
+      },
+      "anes_005": {
+        "code": "3",
+        "label": "3"
+      },
+      "anes_007": {
+        "code": "5",
+        "label": "5"
+      },
+      "anes_008": {
+        "code": "1",
+        "label": "Never permit"
+      },
+      "anes_009": {
+        "code": "6",
+        "label": "6"
+      },
+      "anes_010": {
+        "code": "2",
+        "label": "2"
+      },
+      "anes_011": {
+        "code": "3",
+        "label": "3"
+      },
+      "anes_012": {
+        "code": "7",
+        "label": "Always allow by law"
+      },
+      "anes_013": {
+        "code": "5",
+        "label": "5"
+      },
+      "anes_014": {
+        "code": "1",
+        "label": "Never permit"
+      },
+      "anes_015": {
+        "code": "1",
+        "label": "Never permit"
+      },
+      "anes_016": {
+        "code": "1",
+        "label": "Never permit"
+      },
+      "anes_017": {
+        "code": "3",
+        "label": "3"
+      },
+      "anes_018": {
+        "code": "4",
+        "label": "4"
+      },
+      "anes_019": {
+        "code": "1",
+        "label": "Never permit"
+      },
+      "anes_020": {
+        "code": "2",
+        "label": "2"
+      },
+      "anes_021": {
+        "code": "2",
+        "label": "2"
+      },
+      "anes_022": {
+        "code": "3",
+        "label": "3"
+      },
+      "anes_023": {
+        "code": "4",
+        "label": "4"
+      },
+      "anes_024": {
+        "code": "5",
+        "label": "5"
+      },
+      "anes_025": {
+        "code": "4",
+        "label": "4"
+      },
+      "anes_026": {
+        "code": "1",
+        "label": "Never permit"
+      },
+      "anes_027": {
+        "code": "1",
+        "label": "Never permit"
+      },
+      "anes_028": {
+        "code": "4",
+        "label": "4"
+      },
+      "anes_029": {
+        "code": "2",
+        "label": "2"
+      },
+      "anes_030": {
+        "code": "5",
+        "label": "5"
+      },
+      "anes_032": {
+        "code": "6",
+        "label": "6"
+      },
+      "anes_033": {
+        "code": "3",
+        "label": "3"
+      },
+      "anes_034": {
+        "code": "1",
+        "label": "Never permit"
+      },
+      "anes_035": {
+        "code": "1",
+        "label": "Never permit"
+      },
+      "anes_036": {
+        "code": "7",
+        "label": "Always allow by law"
+      },
+      "anes_038": {
+        "code": "2",
+        "label": "2"
+      },
+      "anes_039": {
+        "code": "5",
+        "label": "5"
+      },
+      "anes_041": {
+        "code": "7",
+        "label": "Always allow by law"
+      },
+      "anes_042": {
+        "code": "1",
+        "label": "Never permit"
+      },
+      "anes_043": {
+        "code": "1",
+        "label": "Never permit"
+      },
+      "anes_044": {
+        "code": "2",
+        "label": "2"
+      },
+      "anes_045": {
+        "code": "6",
+        "label": "6"
+      },
+      "anes_046": {
+        "code": "6",
+        "label": "6"
+      },
+      "anes_047": {
+        "code": "2",
+        "label": "2"
+      },
+      "anes_048": {
+        "code": "4",
+        "label": "4"
+      },
+      "anes_049": {
+        "code": "4",
+        "label": "4"
+      },
+      "anes_050": {
+        "code": "6",
+        "label": "6"
+      }
+    }
+  },
+  {
+    "variable": "V241175",
+    "label": "Environmental regulation",
+    "question_text": "Do you favor or oppose the U.S. government regulating greenhouse gas emissions from power plants, factories, and cars in an effort to reduce global warming?",
+    "response_options": {
+      "1": "Favor regulation",
+      "2": "Oppose regulation"
+    },
+    "domain": "values_personality",
+    "expected_skill": "attitude_construction",
+    "ground_truth": {
+      "anes_001": {
+        "code": "1",
+        "label": "Favor regulation"
+      },
+      "anes_002": {
+        "code": "1",
+        "label": "Favor regulation"
+      },
+      "anes_003": {
+        "code": "1",
+        "label": "Favor regulation"
+      },
+      "anes_004": {
+        "code": "2",
+        "label": "Oppose regulation"
+      },
+      "anes_005": {
+        "code": "1",
+        "label": "Favor regulation"
+      },
+      "anes_006": {
+        "code": "2",
+        "label": "Oppose regulation"
+      },
+      "anes_007": {
+        "code": "2",
+        "label": "Oppose regulation"
+      },
+      "anes_008": {
+        "code": "1",
+        "label": "Favor regulation"
+      },
+      "anes_009": {
+        "code": "2",
+        "label": "Oppose regulation"
+      },
+      "anes_010": {
+        "code": "1",
+        "label": "Favor regulation"
+      },
+      "anes_011": {
+        "code": "1",
+        "label": "Favor regulation"
+      },
+      "anes_012": {
+        "code": "2",
+        "label": "Oppose regulation"
+      },
+      "anes_013": {
+        "code": "1",
+        "label": "Favor regulation"
+      },
+      "anes_014": {
+        "code": "2",
+        "label": "Oppose regulation"
+      },
+      "anes_015": {
+        "code": "1",
+        "label": "Favor regulation"
+      },
+      "anes_016": {
+        "code": "1",
+        "label": "Favor regulation"
+      },
+      "anes_017": {
+        "code": "1",
+        "label": "Favor regulation"
+      },
+      "anes_018": {
+        "code": "2",
+        "label": "Oppose regulation"
+      },
+      "anes_019": {
+        "code": "1",
+        "label": "Favor regulation"
+      },
+      "anes_020": {
+        "code": "1",
+        "label": "Favor regulation"
+      },
+      "anes_021": {
+        "code": "1",
+        "label": "Favor regulation"
+      },
+      "anes_022": {
+        "code": "2",
+        "label": "Oppose regulation"
+      },
+      "anes_023": {
+        "code": "2",
+        "label": "Oppose regulation"
+      },
+      "anes_024": {
+        "code": "2",
+        "label": "Oppose regulation"
+      },
+      "anes_025": {
+        "code": "1",
+        "label": "Favor regulation"
+      },
+      "anes_026": {
+        "code": "2",
+        "label": "Oppose regulation"
+      },
+      "anes_027": {
+        "code": "1",
+        "label": "Favor regulation"
+      },
+      "anes_028": {
+        "code": "2",
+        "label": "Oppose regulation"
+      },
+      "anes_029": {
+        "code": "1",
+        "label": "Favor regulation"
+      },
+      "anes_030": {
+        "code": "2",
+        "label": "Oppose regulation"
+      },
+      "anes_031": {
+        "code": "1",
+        "label": "Favor regulation"
+      },
+      "anes_032": {
+        "code": "1",
+        "label": "Favor regulation"
+      },
+      "anes_033": {
+        "code": "2",
+        "label": "Oppose regulation"
+      },
+      "anes_034": {
+        "code": "1",
+        "label": "Favor regulation"
+      },
+      "anes_035": {
+        "code": "1",
+        "label": "Favor regulation"
+      },
+      "anes_036": {
+        "code": "1",
+        "label": "Favor regulation"
+      },
+      "anes_037": {
+        "code": "2",
+        "label": "Oppose regulation"
+      },
+      "anes_038": {
+        "code": "1",
+        "label": "Favor regulation"
+      },
+      "anes_039": {
+        "code": "1",
+        "label": "Favor regulation"
+      },
+      "anes_040": {
+        "code": "1",
+        "label": "Favor regulation"
+      },
+      "anes_041": {
+        "code": "2",
+        "label": "Oppose regulation"
+      },
+      "anes_042": {
+        "code": "1",
+        "label": "Favor regulation"
+      },
+      "anes_043": {
+        "code": "1",
+        "label": "Favor regulation"
+      },
+      "anes_044": {
+        "code": "2",
+        "label": "Oppose regulation"
+      },
+      "anes_045": {
+        "code": "2",
+        "label": "Oppose regulation"
+      },
+      "anes_046": {
+        "code": "1",
+        "label": "Favor regulation"
+      },
+      "anes_047": {
+        "code": "1",
+        "label": "Favor regulation"
+      },
+      "anes_048": {
+        "code": "2",
+        "label": "Oppose regulation"
+      },
+      "anes_049": {
+        "code": "1",
+        "label": "Favor regulation"
+      },
+      "anes_050": {
+        "code": "2",
+        "label": "Oppose regulation"
+      }
+    }
+  }
+]
